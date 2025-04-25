@@ -15,13 +15,19 @@
   <body class="m-0 flex flex-col min-h-screen bg-[#edf6fa]">
     <header class="">
       <!-- Navbar -->
-      <nav class="bg-gray-800 text-white px-8 md:px-16 lg:px-32 py-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-          <div class="flex items-center space-x-22">
-            <div class="text-xl font-bold">MySite</div>
+      <nav class="text-primary text-xl px-8 md:px-16 lg:px-22 py-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-12">
+            
+              <img
+                class="w-32"
+                src="https://www.dis.edu.bd/uploads/shortcodes/dis-new-1676290938.webp"
+                alt=""
+              />
+            
 
             <!-- Desktop Menu -->
-            <ul id="navLinks" class="hidden md:flex space-x-6">
+            <ul id="navLinks" class="hidden md:flex gap-6">
               <li><a href="#" class="hover:text-[#e3a507]">Admission</a></li>
               <li><a href="#" class="hover:text-[#e3a507]">Branches</a></li>
               <li><a href="#" class="hover:text-[#e3a507]">Academic</a></li>
@@ -83,7 +89,7 @@
     <!-- main  -->
     <main class="flex-grow">
       <!-- main container  -->
-      <div class="px-8 md:px-16 lg:px-32">
+      <div class="px-8 md:px-16 lg:px-22">
         <!-- banner  -->
         <section>
           <div class="grid grid-cols-1 md:grid-cols-2 py-12 gap-4">
@@ -95,9 +101,9 @@
               </button>
             </div>
             <!-- image  -->
-            <div>
+            <div class="hidden md:block">
               <img
-                src="https://images.pexels.com/photos/8926556/pexels-photo-8926556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="https://www.dis.edu.bd/uploads/post/8.1-1676770769.webp"
                 alt=""
               />
             </div>
@@ -116,18 +122,18 @@
                 Educational Needs of Students.
               </p>
             </div>
-            <div>
-              <button class="px-6 py-2 text-white bg-blue-500 rounded-full">
+            <div class="w-1/2">
+              <a href="" class="px-6 py-2 block text-white text-center bg-primary  hover:text-yellow-500 duration-300 rounded-full">
                 Apply Now
-              </button>
+              </a>
             </div>
           </div>
           <!-- cards container  -->
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white gap-6 p-4"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 rounded-2xl bg-white gap-6 p-4 mx-4 md:mx-0"
           >
             <!-- card 1 -->
-            <div class="bg-blue-200 p-4 flex flex-col gap-4">
+            <div class="bg-blue-200 p-4 flex flex-col gap-4 rounded-2xl">
               <img
                 class="size-16"
                 src="/src/assets/icons/abc.png"
@@ -146,13 +152,15 @@
               </button>
             </div>
             <!-- card 2 -->
-            <div class="bg-blue-200 p-4 flex flex-col gap-4">
+            <div class="bg-blue-200 p-4 flex flex-col gap-4 rounded-2xl">
               <img
                 class="size-16"
-                src="/src/assets/icons/abc.png"
+                src="/src/assets/icons/boy.png"
                 alt="freepick"
               />
-              <h2 class="text-primary text-2xl font-semibold">Pre School</h2>
+              <h2 class="text-primary text-2xl font-semibold">
+                Junior Section
+              </h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                 nisi!...
@@ -165,13 +173,15 @@
               </button>
             </div>
             <!-- card 3 -->
-            <div class="bg-blue-200 p-4 flex flex-col gap-4">
+            <div class="bg-blue-200 p-4 flex flex-col rounded-2xl gap-4">
               <img
                 class="size-16"
-                src="/src/assets/icons/abc.png"
+                src="/src/assets/icons/playing.png"
                 alt="freepick"
               />
-              <h2 class="text-primary text-2xl font-semibold">Pre School</h2>
+              <h2 class="text-primary text-2xl font-semibold">
+                Middle Section
+              </h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                 nisi!...
@@ -184,13 +194,15 @@
               </button>
             </div>
             <!-- card 4 -->
-            <div class="bg-blue-200 p-4 flex flex-col gap-4">
+            <div class="bg-blue-200 p-4 flex flex-col gap-4 rounded-2xl">
               <img
                 class="size-16"
-                src="/src/assets/icons/abc.png"
+                src="/src/assets/icons/children.png"
                 alt="freepick"
               />
-              <h2 class="text-primary text-2xl font-semibold">Pre School</h2>
+              <h2 class="text-primary text-2xl font-semibold">
+                Senior Scetion
+              </h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                 nisi!...
@@ -208,97 +220,411 @@
         <section>
           <!-- text  -->
           <div
-            class="flex justify-between flex-col md:flex-row md:items-center py-6 gap-3"
+            class="flex justify-between flex-col md:flex-row md:items-center py-6 gap-6"
           >
             <div class="space-y-4">
-              <h1 class="text-primary text-4xl font-bold">Academic Sections</h1>
+              <h1 class="text-primary text-4xl font-bold">Our Facilities</h1>
               <p>
                 Explore Our Comprehensive Academic Program, Catering to the
                 Educational Needs of Students.
               </p>
             </div>
-            <div>
-              <button class="px-6 py-2 text-white bg-blue-500 rounded-full">
+            <div class="w-1/2">
+              <a href="" class="px-6 py-2 block text-white text-center bg-primary  hover:text-yellow-500 duration-300 rounded-full">
                 Apply Now
-              </button>
+              </a>
             </div>
           </div>
           <!-- image and cards  -->
-          <div class="grid grid-cols-1 md:grid-cols-2 py-18 gap-4">
+          <div
+            class="flex justify-center items-center py-18 gap-4"
+          >
             <!-- image  -->
-            <div>
-              <img
-                src="https://images.pexels.com/photos/8926556/pexels-photo-8926556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt=""
-              />
+            <div class="hidden lg:block">
+              <div class="w-100 h-100 rounded-full overflow-hidden mx-auto border-22 border-white">
+                <img
+                  class="w-full h-full object-cover"
+                  src="https://www.dis.edu.bd/uploads/shortcodes/Sr%20students-min-compressed%20(1)-1694404099.webp"
+                  alt="Student"
+                />
+              </div>
             </div>
+
             <!-- cards container  -->
-            <div
-              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row p-8"
-            >
+            <div class="hidden w-full md:grid grid-cols-2 lg:grid-cols-3 rounded-2xl  overflow-hidden">
               <!-- card 1 -->
-              <div class="bg-blue-200 p-4">
-                <div class="flex flex-col gap-4">
+              <div class="bg-white px-4 py-12 group relative overflow-hidden">
+                <div class="flex flex-col gap-4 text-center relative z-0">
                   <img
-                    class="size-16"
-                    src="/src/assets/icons/abc.png"
+                    class="size-16 mx-auto group-hover:hidden transition duration-300"
+                    src="/src/assets/icons/daycare.png"
                     alt="freepick"
                   />
-                  <h2 class="text-primary text-2xl font-semibold">
-                    Pre School
+                  <h2
+                    class="text-primary text-2xl font-semibold group-hover:text-white transition duration-300"
+                  >
+                    Day Care
                   </h2>
                 </div>
+
+                <!-- Hover Background Image with Overlay and Button -->
+                <div
+                  class="absolute inset-0 px-4 py-12 bg-cover bg-center bg-no-repeat opacity-0 group-hover:opacity-100 transition duration-300 z-10 bg-[url('https://img.freepik.com/free-photo/front-view-girl-learning-math-school_23-2150470828.jpg?t=st=1745569759~exp=1745573359~hmac=7bbf4fe3c7ef6338d419fa27693e3e20c04a2340202abd37856951459e7353ff&w=996')]"
+                >
+                  <div
+                    class="absolute inset-0 bg-black/50 flex items-center justify-center"
+                  >
+                    <div class="flex flex-col gap-6 justify-center items-center">
+                      <h2 class="text-white text-xl">Day Care</h2>
+                      <a
+                        href=""
+                        class="text-white px-2 py-1 rounded-full border hover-secondary group transform duration-300"
+                      >
+                        Learn More
+                        <span class="text-secondary"
+                          ><i
+                            class="fa-solid fa-arrow-right group-hover:text-white"
+                          ></i
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
+
               <!-- card 2 -->
-              <div class="bg-white p-4 flex flex-col gap-4">
-                <img
-                  class="size-16"
-                  src="/src/assets/icons/abc.png"
-                  alt="freepick"
-                />
-                <h2 class="text-primary text-2xl font-semibold">Pre School</h2>
+                <div class="bg-white px-4 py-12 group relative overflow-hidden">
+                <div class="flex flex-col gap-4 text-center relative z-0">
+                  <img
+                    class="size-16 mx-auto group-hover:hidden transition duration-300"
+                    src="/src/assets/icons/daycare.png"
+                    alt="freepick"
+                  />
+                  <h2
+                    class="text-primary text-2xl font-semibold group-hover:text-white transition duration-300"
+                  >
+                    Day Care
+                  </h2>
+                </div>
+
+                <!-- Hover Background Image with Overlay and Button -->
+                <div
+                  class="absolute inset-0 px-4 py-12 bg-cover bg-center bg-no-repeat opacity-0 group-hover:opacity-100 transition duration-300 z-10 bg-[url('https://img.freepik.com/free-photo/front-view-girl-learning-math-school_23-2150470828.jpg?t=st=1745569759~exp=1745573359~hmac=7bbf4fe3c7ef6338d419fa27693e3e20c04a2340202abd37856951459e7353ff&w=996')]"
+                >
+                  <div
+                    class="absolute inset-0 bg-black/50 flex items-center justify-center"
+                  >
+                    <div class="flex flex-col gap-6 justify-center items-center">
+                      <h2 class="text-white text-xl">Day Care</h2>
+                      <a
+                        href=""
+                        class="text-white px-2 py-1 rounded-full border hover-secondary group transform duration-300"
+                      >
+                        Learn More
+                        <span class="text-secondary"
+                          ><i
+                            class="fa-solid fa-arrow-right group-hover:text-white"
+                          ></i
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- card 3 -->
-              <div class="bg-blue-200 p-4 flex flex-col gap-4">
-                <img
-                  class="size-16"
-                  src="/src/assets/icons/abc.png"
-                  alt="freepick"
-                />
-                <h2 class="text-primary text-2xl font-semibold">Pre School</h2>
+                <div class="bg-white px-4 py-12 group relative overflow-hidden">
+                <div class="flex flex-col gap-4 text-center relative z-0">
+                  <img
+                    class="size-16 mx-auto group-hover:hidden transition duration-300"
+                    src="/src/assets/icons/daycare.png"
+                    alt="freepick"
+                  />
+                  <h2
+                    class="text-primary text-2xl font-semibold group-hover:text-white transition duration-300"
+                  >
+                    Day Care
+                  </h2>
+                </div>
+
+                <!-- Hover Background Image with Overlay and Button -->
+                <div
+                  class="absolute inset-0 px-4 py-12 bg-cover bg-center bg-no-repeat opacity-0 group-hover:opacity-100 transition duration-300 z-10 bg-[url('https://img.freepik.com/free-photo/front-view-girl-learning-math-school_23-2150470828.jpg?t=st=1745569759~exp=1745573359~hmac=7bbf4fe3c7ef6338d419fa27693e3e20c04a2340202abd37856951459e7353ff&w=996')]"
+                >
+                  <div
+                    class="absolute inset-0 bg-black/50 flex items-center justify-center"
+                  >
+                    <div class="flex flex-col gap-6 justify-center items-center">
+                      <h2 class="text-white text-xl">Day Care</h2>
+                      <a
+                        href=""
+                        class="text-white px-2 py-1 rounded-full border hover-secondary group transform duration-300"
+                      >
+                        Learn More
+                        <span class="text-secondary"
+                          ><i
+                            class="fa-solid fa-arrow-right group-hover:text-white"
+                          ></i
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- card 4 -->
-              <div class="bg-white p-4 flex flex-col gap-4">
-                <img
-                  class="size-16"
-                  src="/src/assets/icons/abc.png"
-                  alt="freepick"
-                />
-                <h2 class="text-primary text-2xl font-semibold">Pre School</h2>
+               <div class="bg-white px-4 py-12 group relative overflow-hidden">
+                <div class="flex flex-col gap-4 text-center relative z-0">
+                  <img
+                    class="size-16 mx-auto group-hover:hidden transition duration-300"
+                    src="/src/assets/icons/daycare.png"
+                    alt="freepick"
+                  />
+                  <h2
+                    class="text-primary text-2xl font-semibold group-hover:text-white transition duration-300"
+                  >
+                    Day Care
+                  </h2>
+                </div>
+
+                <!-- Hover Background Image with Overlay and Button -->
+                <div
+                  class="absolute inset-0 px-4 py-12 bg-cover bg-center bg-no-repeat opacity-0 group-hover:opacity-100 transition duration-300 z-10 bg-[url('https://img.freepik.com/free-photo/front-view-girl-learning-math-school_23-2150470828.jpg?t=st=1745569759~exp=1745573359~hmac=7bbf4fe3c7ef6338d419fa27693e3e20c04a2340202abd37856951459e7353ff&w=996')]"
+                >
+                  <div
+                    class="absolute inset-0 bg-black/50 flex items-center justify-center"
+                  >
+                    <div class="flex flex-col gap-6 justify-center items-center">
+                      <h2 class="text-white text-xl">Day Care</h2>
+                      <a
+                        href=""
+                        class="text-white px-2 py-1 rounded-full border hover-secondary group transform duration-300"
+                      >
+                        Learn More
+                        <span class="text-secondary"
+                          ><i
+                            class="fa-solid fa-arrow-right group-hover:text-white"
+                          ></i
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- card 5 -->
-              <div class="bg-blue-200 p-4 flex flex-col gap-4">
-                <img
-                  class="size-16"
-                  src="/src/assets/icons/abc.png"
-                  alt="freepick"
-                />
-                <h2 class="text-primary text-2xl font-semibold">Pre School</h2>
+                <div class="bg-white px-4 py-12 group relative overflow-hidden">
+                <div class="flex flex-col gap-4 text-center relative z-0">
+                  <img
+                    class="size-16 mx-auto group-hover:hidden transition duration-300"
+                    src="/src/assets/icons/daycare.png"
+                    alt="freepick"
+                  />
+                  <h2
+                    class="text-primary text-2xl font-semibold group-hover:text-white transition duration-300"
+                  >
+                    Day Care
+                  </h2>
+                </div>
+
+                <!-- Hover Background Image with Overlay and Button -->
+                <div
+                  class="absolute inset-0 px-4 py-12 bg-cover bg-center bg-no-repeat opacity-0 group-hover:opacity-100 transition duration-300 z-10 bg-[url('https://img.freepik.com/free-photo/front-view-girl-learning-math-school_23-2150470828.jpg?t=st=1745569759~exp=1745573359~hmac=7bbf4fe3c7ef6338d419fa27693e3e20c04a2340202abd37856951459e7353ff&w=996')]"
+                >
+                  <div
+                    class="absolute inset-0 bg-black/50 flex items-center justify-center"
+                  >
+                    <div class="flex flex-col gap-6 justify-center items-center">
+                      <h2 class="text-white text-xl">Day Care</h2>
+                      <a
+                        href=""
+                        class="text-white px-2 py-1 rounded-full border hover-secondary group transform duration-300"
+                      >
+                        Learn More
+                        <span class="text-secondary"
+                          ><i
+                            class="fa-solid fa-arrow-right group-hover:text-white"
+                          ></i
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- card 6 -->
-              <div class="bg-white p-4 flex flex-col gap-4">
-                <img
-                  class="size-16"
-                  src="/src/assets/icons/abc.png"
-                  alt="freepick"
-                />
-                <h2 class="text-primary text-2xl font-semibold">Pre School</h2>
+                <div class="bg-white px-4 py-12 group relative overflow-hidden">
+                <div class="flex flex-col gap-4 text-center relative z-0">
+                  <img
+                    class="size-16 mx-auto group-hover:hidden transition duration-300"
+                    src="/src/assets/icons/daycare.png"
+                    alt="freepick"
+                  />
+                  <h2
+                    class="text-primary text-2xl font-semibold group-hover:text-white transition duration-300"
+                  >
+                    Day Care
+                  </h2>
+                </div>
+
+                <!-- Hover Background Image with Overlay and Button -->
+                <div
+                  class="absolute inset-0 px-4 py-12 bg-cover bg-center bg-no-repeat opacity-0 group-hover:opacity-100 transition duration-300 z-10 bg-[url('https://img.freepik.com/free-photo/front-view-girl-learning-math-school_23-2150470828.jpg?t=st=1745569759~exp=1745573359~hmac=7bbf4fe3c7ef6338d419fa27693e3e20c04a2340202abd37856951459e7353ff&w=996')]"
+                >
+                  <div
+                    class="absolute inset-0 bg-black/50 flex items-center justify-center"
+                  >
+                    <div class="flex flex-col gap-6 justify-center items-center">
+                      <h2 class="text-white text-xl">Day Care</h2>
+                      <a
+                        href=""
+                        class="text-white px-2 py-1 rounded-full border hover-secondary group transform duration-300"
+                      >
+                        Learn More
+                        <span class="text-secondary"
+                          ><i
+                            class="fa-solid fa-arrow-right group-hover:text-white"
+                          ></i
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- for mobile cards container -->
+            <div class="md:hidden w-full flex flex-col gap-6">
+              <!-- card 1  -->
+              <div
+                class="relative w-full h-100 rounded-2xl bg-cover bg-center bg-no-repeat bg-[url('https://img.freepik.com/free-photo/front-view-girl-learning-math-school_23-2150470828.jpg?t=st=1745569759~exp=1745573359~hmac=7bbf4fe3c7ef6338d419fa27693e3e20c04a2340202abd37856951459e7353ff&w=996')]"
+              >
+                <div
+                  class="absolute inset-0 bg-black/50 flex flex-col gap-6 items-center justify-center rounded-2xl"
+                >
+                  <h2 class="text-white text-4xl font-semibold">Day Care</h2>
+                  <a
+                    href=""
+                    class="text-white px-4 py-2 rounded-full border hover-secondary group transform duration-300"
+                  >
+                    Learn More
+                    <span class="text-secondary"
+                      ><i
+                        class="fa-solid fa-arrow-right group-hover:text-white"
+                      ></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+              <!-- card 2  -->
+              <div
+                class="relative w-full h-100 rounded-2xl bg-cover bg-center bg-no-repeat bg-[url('https://img.freepik.com/free-photo/children-car-go-school-happy-sweet-faces-sisters_169016-3705.jpg?t=st=1745574089~exp=1745577689~hmac=45092bd171590e295de6899657ee3786260d8d3a3dd2dcef71dd423790af9a7d&w=996')]"
+              >
+                <div
+                  class="absolute inset-0 rounded-2xl bg-black/50 flex flex-col gap-6 items-center justify-center"
+                >
+                  <h2 class="text-white text-4xl font-semibold">
+                    Safe Transport
+                  </h2>
+                  <a
+                    href=""
+                    class="text-white px-4 py-2 rounded-full border hover-secondary group transform duration-300"
+                  >
+                    Learn More
+                    <span class="text-secondary"
+                      ><i
+                        class="fa-solid fa-arrow-right group-hover:text-white"
+                      ></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+              <!-- card 3  -->
+              <div
+                class="relative w-full h-100 rounded-2xl bg-cover bg-center bg-no-repeat bg-[url('https://img.freepik.com/free-photo/girl-teacher-doing-science-experiments-with-microscope_23-2148799251.jpg?t=st=1745574224~exp=1745577824~hmac=c2d6b07e51f5a48fa61c7dac234ff519f0b1d5c352ff3b39fc7e6a12b3958a50&w=996')]"
+              >
+                <div
+                  class="absolute inset-0 rounded-2xl bg-black/50 flex flex-col gap-6 items-center justify-center"
+                >
+                  <h2 class="text-white text-4xl font-semibold">STEM Labs</h2>
+                  <a
+                    href=""
+                    class="text-white px-4 py-2 rounded-full border hover-secondary group transform duration-300"
+                  >
+                    Learn More
+                    <span class="text-secondary"
+                      ><i
+                        class="fa-solid fa-arrow-right group-hover:text-white"
+                      ></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+              <!-- card 4  -->
+              <div
+                class="relative w-full h-100 rounded-2xl bg-cover bg-center bg-no-repeat bg-[url('https://img.freepik.com/free-photo/laughing-children-looking-copybook-library_23-2147854121.jpg?t=st=1745574342~exp=1745577942~hmac=6fb3d3734360372739a108dba63271302d84bb22db415de628f6bec524854095&w=996')]"
+              >
+                <div
+                  class="absolute inset-0 rounded-2xl bg-black/50 flex flex-col gap-6 items-center justify-center"
+                >
+                  <h2 class="text-white text-4xl font-semibold">Libraries</h2>
+                  <a
+                    href=""
+                    class="text-white px-4 py-2 rounded-full border hover-secondary group transform duration-300"
+                  >
+                    Learn More
+                    <span class="text-secondary"
+                      ><i
+                        class="fa-solid fa-arrow-right group-hover:text-white"
+                      ></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+              <!-- card 5  -->
+              <div
+                class="relative w-full h-100 rounded-2xl bg-cover bg-center bg-no-repeat bg-[url('https://img.freepik.com/free-photo/studying-classroom_1098-317.jpg?t=st=1745574466~exp=1745578066~hmac=d53d56d61dfa5ed6d8923fed27568569b7fd4da4e4cdc966791786b28795cad0&w=996')]"
+              >
+                <div
+                  class="absolute inset-0 rounded-2xl bg-black/50 flex flex-col gap-6 items-center justify-center"
+                >
+                  <h2 class="text-white text-4xl font-semibold">Clubs</h2>
+                  <a
+                    href=""
+                    class="text-white px-4 py-2 rounded-full border hover-secondary group transform duration-300"
+                  >
+                    Learn More
+                    <span class="text-secondary"
+                      ><i
+                        class="fa-solid fa-arrow-right group-hover:text-white"
+                      ></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+              <!-- card 6  -->
+              <div
+                class="relative w-full h-100 rounded-2xl bg-cover bg-center bg-no-repeat bg-[url('https://img.freepik.com/free-photo/high-angle-kids-with-skateboard-phone_23-2148480255.jpg?t=st=1745574553~exp=1745578153~hmac=0a796e16a1bb31422756d7f8f1edf24d98a4267df33ff86c70e7a4ef0b0fac5a&w=996')]"
+              >
+                <div
+                  class="absolute inset-0 rounded-2xl bg-black/50 flex flex-col gap-6 items-center justify-center"
+                >
+                  <h2 class="text-white text-4xl font-semibold">My e-kids</h2>
+                  <a
+                    href=""
+                    class="text-white px-4 py-2 rounded-full border hover-secondary group transform duration-300"
+                  >
+                    Learn More
+                    <span class="text-secondary"
+                      ><i
+                        class="fa-solid fa-arrow-right group-hover:text-white"
+                      ></i
+                    ></span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+        </section>
 
-          <!-- big card  -->
+        <!-- big card  -->
 
+        <section>
           <div class="py-12">
             <div
               class="grid grid-cols-1 md:grid-cols-2 py-12 gap-4 bg-white px-6 rounded-2xl"
@@ -316,8 +642,8 @@
               <!-- image  -->
               <div class="flex justify-center">
                 <img
-                  class="rounded-full size-100"
-                  src="https://images.pexels.com/photos/8926556/pexels-photo-8926556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  class="rounded-2xl"
+                  src="https://img.freepik.com/free-photo/smart-student-holding-file_1098-3425.jpg?t=st=1745557325~exp=1745560925~hmac=b86fd55b4c50e726c27b80e74f35661ca21a443e286f6f320c5138397466ad25&w=1380"
                   alt=""
                 />
               </div>
@@ -337,10 +663,10 @@
                 Educational Needs of Students.
               </p>
             </div>
-            <div>
-              <button class="px-6 py-2 text-white bg-blue-500 rounded-full">
+            <div class="w-1/2">
+              <a href="" class="px-6 py-2 block text-white text-center bg-primary  hover:text-yellow-500 duration-300 rounded-full">
                 See All
-              </button>
+              </a>
             </div>
           </div>
           <!-- cards container  -->
@@ -348,17 +674,19 @@
             <!-- card 1 -->
             <div class="bg-white rounded-2xl shadow-md p-4 flex flex-col gap-4">
               <img
-                class="w-full mx-auto"
-                src="https://images.pexels.com/photos/8926556/pexels-photo-8926556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="w-full h-96 md:h-52 mx-auto"
+                src="https://img.freepik.com/premium-photo/bangladesh-victory-day-16-december-illustration_968577-299.jpg?w=826"
                 alt="freepick"
               />
-              <p class="text-secondary">April 24, 2025</p>
-              <h2 class="text-primary text-2xl font-semibold">Pre School</h2>
+              <p class="text-secondary">Dec 16, 2025</p>
+              <h2 class="text-primary text-2xl font-semibold">
+                Victory Day 2024
+              </h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                 nisi!...
               </p>
-              .
+
               <button
                 class="text-white px-4 py-2 rounded-full shadow-sm bg-yellow-500"
               >
@@ -368,17 +696,20 @@
             <!-- card 2 -->
             <div class="bg-white rounded-2xl shadow-md p-4 flex flex-col gap-4">
               <img
-                class="w-full mx-auto"
-                src="https://images.pexels.com/photos/8926556/pexels-photo-8926556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="w-full h-96 md:h-52 mx-auto"
+                src="https://img.freepik.com/premium-photo/independence-day-bangladesh-26-march-social-media-post-illustration-template_1117422-51.jpg?w=826"
                 alt="freepick"
               />
-              <p class="text-secondary">April 24, 2025</p>
-              <h2 class="text-primary text-2xl font-semibold">Pre School</h2>
+
+              <p class="text-secondary">March 26, 2025</p>
+              <h2 class="text-primary text-2xl font-semibold">
+                Independence Day
+              </h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                 nisi!...
               </p>
-              .
+
               <button
                 class="text-white px-4 py-2 rounded-full shadow-sm bg-yellow-500"
               >
@@ -388,17 +719,19 @@
             <!-- card 3 -->
             <div class="bg-white rounded-2xl shadow-md p-4 flex flex-col gap-4">
               <img
-                class="w-full mx-auto"
-                src="https://images.pexels.com/photos/8926556/pexels-photo-8926556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="w-full h-96 md:h-52 mx-auto"
+                src="https://img.freepik.com/premium-photo/group-people-are-gathered-around-table-with-banner-that-says-national-day_913495-518.jpg?w=826"
                 alt="freepick"
               />
               <p class="text-secondary">April 24, 2025</p>
-              <h2 class="text-primary text-2xl font-semibold">Pre School</h2>
+              <h2 class="text-primary text-2xl font-semibold">
+                Science Festival
+              </h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                 nisi!...
               </p>
-              .
+
               <button
                 class="text-white px-4 py-2 rounded-full shadow-sm bg-yellow-500"
               >
@@ -429,8 +762,8 @@
               class="bg-white rounded-2xl shadow-md flex flex-col gap-4 pb-4"
             >
               <img
-                class="w-full mx-auto rounded-t-lg"
-                src="https://images.pexels.com/photos/8926556/pexels-photo-8926556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="w-full h-64 md:h-100 mx-auto rounded-t-lg object-cover"
+                src="https://www.dis.edu.bd/uploads/branch/left-1-1676785177.webp"
                 alt="freepick"
               />
 
@@ -447,13 +780,13 @@
             <!-- card 2 -->
             <div class="bg-white rounded-2xl shadow-md flex flex-col gap-4">
               <img
-                class="w-full mx-auto rounded-t-lg"
-                src="https://images.pexels.com/photos/8926556/pexels-photo-8926556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="w-full h-64 md:h-100 mx-auto rounded-t-lg object-cover"
+                src="https://www.dis.edu.bd/uploads/branch/web6-1676803758.webp"
                 alt="freepick"
               />
 
               <div class="p-4 space-y-4">
-                <h2 class="text-primary text-2xl font-semibold">Dhanmondi</h2>
+                <h2 class="text-primary text-2xl font-semibold">Gazipur</h2>
                 <button
                   class="text-primary px-4 py-2 rounded-full shadow-lg border text-lg"
                 >
@@ -465,13 +798,13 @@
             <!-- card 3 -->
             <div class="bg-white rounded-2xl shadow-md flex flex-col gap-4">
               <img
-                class="w-full mx-auto rounded-t-lg"
-                src="https://images.pexels.com/photos/8926556/pexels-photo-8926556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="w-full h-64 md:h-100 mx-auto rounded-t-lg"
+                src="https://www.dis.edu.bd/uploads/branch/WhatsApp%20Image%202024-03-23%20at%2013.35.50-1711956018.webp"
                 alt="freepick"
               />
 
               <div class="p-4 space-y-4">
-                <h2 class="text-primary text-2xl font-semibold">Dhanmondi</h2>
+                <h2 class="text-primary text-2xl font-semibold">Bonani</h2>
                 <button
                   class="text-primary px-4 py-2 rounded-full shadow-lg border text-lg"
                 >
@@ -484,56 +817,94 @@
         </section>
 
         <!-- parents says  -->
-          <section class="pb-12">
-            <div>
-                <h1 class="text-5xl text-primary font-semibold">What Parents Says About Us</h1>
-            </div>
+        <section class="pb-12">
+          <div>
+            <h1 class="text-5xl text-primary font-semibold">
+              What Parents Says About Us
+            </h1>
+          </div>
           <div class="grid grid-cols-1 md:grid-cols-2 py-12 gap-4">
-            
             <!-- image  -->
             <div>
               <img
-                src="https://images.pexels.com/photos/8926556/pexels-photo-8926556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="size-100"
+                src="https://www.dis.edu.bd/uploads/post/parents-1676768273.webp"
                 alt=""
               />
             </div>
             <!-- text  -->
             <div class="place-items-start space-y-8 place-self-center">
-                <p>"As a parent, I truly appreciate the supportive environment this school provides. The teachers are caring, the curriculum is well-structured, and my child is not only learning but also enjoying the process. The school encourages creativity, discipline, and strong moral values, which are essential for a child's overall development."</p>
+              <p>
+                "As a parent, I truly appreciate the supportive environment this
+                school provides. The teachers are caring, the curriculum is
+                well-structured, and my child is not only learning but also
+                enjoying the process. The school encourages creativity,
+                discipline, and strong moral values, which are essential for a
+                child's overall development."
+              </p>
               <h3 class="text-2xl text-primary mt-12">Parents</h3>
-             
             </div>
           </div>
         </section>
 
         <!-- subscribe  -->
-         <section class="pb-16">
-            <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-12">
-
-                    <div>
-                        <img src="https://images.pexels.com/photos/8926556/pexels-photo-8926556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-                    </div>
-                    <div>
-                        <img src="https://images.pexels.com/photos/8926556/pexels-photo-8926556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></div>
-                    <div>
-                        <img src="https://images.pexels.com/photos/8926556/pexels-photo-8926556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-                    </div>
-                    <div>
-                        <img src="https://images.pexels.com/photos/8926556/pexels-photo-8926556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-                    </div>
+        <section class="pb-16">
+          <div
+            class="grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-12"
+          >
+            <div>
+              <img
+                class="w-full h-64"
+                src="https://www.dis.edu.bd/uploads/post/curriculum1-1695535717.webp"
+                alt=""
+              />
             </div>
-            <div class="bg-white px-4 py-12 rounded-2xl">
-                
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6 w-full">
-                <h2 class="text-primary font-semibold text-4xl">Subscribe to Our Newsletter</h2>
-                <form class="relative w-full md:w-1/2">
-                    <input type="email" name="" id="" placeholder="Email Address" class="px-8 py-4 w-full border border-yellow-500 rounded-full">
-                   <button class="absolute bg-yellow-500 size-12 right-2 top-1 text-white rounded-full"> <i class="fa-solid fa-angle-right "></i></button>
-                </form>
+            <div>
+              <img
+                class="w-full h-64"
+                src="https://www.dis.edu.bd/uploads/post/onil-1676865676.webp"
+                alt=""
+              />
             </div>
+            <div>
+              <img
+                class="w-full h-64"
+                src="https://www.dis.edu.bd/uploads/post/Shahin%20areza-1676865869.webp"
+                alt=""
+              />
             </div>
-         </section>
-
+            <div>
+              <img
+                class="w-full h-64"
+                src="https://www.dis.edu.bd/uploads/post/CEO-1676867942.webp"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="bg-white px-4 py-12 rounded-2xl">
+            <div
+              class="flex flex-col md:flex-row justify-between items-center gap-6 w-full"
+            >
+              <h2 class="text-primary font-semibold text-4xl">
+                Subscribe to Our Newsletter
+              </h2>
+              <form class="relative w-full md:w-1/2">
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Email Address"
+                  class="px-8 py-4 w-full border border-yellow-500 rounded-full"
+                />
+                <button
+                  class="absolute bg-yellow-500 size-12 right-2 top-1 text-white rounded-full"
+                >
+                  <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
     <!-- footer  -->

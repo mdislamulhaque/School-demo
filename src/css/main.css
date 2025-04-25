@@ -3,6 +3,7 @@
 :root {
   --primary-color: #002454;
   --secondary-color: #e3a507;
+  --transparent-color:#00245457;
 }
 
 .text-primary{
@@ -11,4 +12,25 @@
 
 .text-secondary{
     color: var(--secondary-color);
+}
+
+.bg-primary{
+  background-color: var(--primary-color);
+}
+.bg-secondary{
+  background-color: var(--secondary-color);
+}
+
+.hover-primary:hover{
+  background-color: var(--primary-color);
+
+  
+}
+.hover-secondary:hover{
+  background-color: var(--secondary-color);
+  
+}
+
+.hover-transparent:hover{
+  background-color: var(--transparent-color);
 }
