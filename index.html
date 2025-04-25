@@ -15,16 +15,14 @@
   <body class="m-0 flex flex-col min-h-screen bg-[#edf6fa]">
     <header class="">
       <!-- Navbar -->
-      <nav class="text-primary text-xl px-8 md:px-16 lg:px-22 py-4">
+      <nav id="navbar" class="text-primary text-xl px-8 md:px-16 lg:px-22 py-4 fixed top-0 left-0 z-50 w-full">
         <div class="flex justify-between items-center">
           <div class="flex items-center gap-12">
-            
-              <img
-                class="w-32"
-                src="https://www.dis.edu.bd/uploads/shortcodes/dis-new-1676290938.webp"
-                alt=""
-              />
-            
+            <img
+              class="w-32"
+              src="https://www.dis.edu.bd/uploads/shortcodes/dis-new-1676290938.webp"
+              alt=""
+            />
 
             <!-- Desktop Menu -->
             <ul id="navLinks" class="hidden md:flex gap-6">
@@ -91,7 +89,7 @@
       <!-- main container  -->
       <div class="px-8 md:px-16 lg:px-22">
         <!-- banner  -->
-        <section>
+        <section class="mt-10">
           <div class="grid grid-cols-1 md:grid-cols-2 py-12 gap-4">
             <!-- text  -->
             <div class="place-items-start space-y-8 place-self-center">
@@ -122,8 +120,11 @@
                 Educational Needs of Students.
               </p>
             </div>
-            <div class="w-1/2">
-              <a href="" class="px-6 py-2 block text-white text-center bg-primary  hover:text-yellow-500 duration-300 rounded-full">
+            <div class="w-1/2 md:w-2/8">
+              <a
+                href=""
+                class="px-6 py-2 block text-white text-center bg-primary hover:text-yellow-500 duration-300 rounded-full"
+              >
                 Apply Now
               </a>
             </div>
@@ -144,12 +145,16 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                 nisi!...
               </p>
-              .
-              <button
-                class="text-primary px-4 py-2 rounded-full shadow-sm bg-white"
+
+              <a
+                href=""
+                class="text-white bg-primary text-center px-4 py-2 rounded-full border hover-secondary group transform duration-300"
               >
-                Learn More <span><i class="fa-solid fa-arrow-right"></i></span>
-              </button>
+                Learn More
+                <span class="text-secondary"
+                  ><i class="fa-solid fa-arrow-right group-hover:text-white"></i
+                ></span>
+              </a>
             </div>
             <!-- card 2 -->
             <div class="bg-blue-200 p-4 flex flex-col gap-4 rounded-2xl">
@@ -165,12 +170,16 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                 nisi!...
               </p>
-              .
-              <button
-                class="text-primary px-4 py-2 rounded-full shadow-sm bg-white"
+
+              <a
+                href=""
+                class="text-white bg-primary text-center px-4 py-2 rounded-full border hover-secondary group transform duration-300"
               >
-                Learn More <span><i class="fa-solid fa-arrow-right"></i></span>
-              </button>
+                Learn More
+                <span class="text-secondary"
+                  ><i class="fa-solid fa-arrow-right group-hover:text-white"></i
+                ></span>
+              </a>
             </div>
             <!-- card 3 -->
             <div class="bg-blue-200 p-4 flex flex-col rounded-2xl gap-4">
@@ -186,12 +195,16 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                 nisi!...
               </p>
-              .
-              <button
-                class="text-primary px-4 py-2 rounded-full shadow-sm bg-white"
+
+              <a
+                href=""
+                class="text-white bg-primary text-center px-4 py-2 rounded-full border hover-secondary group transform duration-300"
               >
-                Learn More <span><i class="fa-solid fa-arrow-right"></i></span>
-              </button>
+                Learn More
+                <span class="text-secondary"
+                  ><i class="fa-solid fa-arrow-right group-hover:text-white"></i
+                ></span>
+              </a>
             </div>
             <!-- card 4 -->
             <div class="bg-blue-200 p-4 flex flex-col gap-4 rounded-2xl">
@@ -207,12 +220,16 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                 nisi!...
               </p>
-              .
-              <button
-                class="text-primary px-4 py-2 rounded-full shadow-sm bg-white"
+
+              <a
+                href=""
+                class="text-white bg-primary text-center px-4 py-2 rounded-full border hover-secondary group transform duration-300"
               >
-                Learn More <span><i class="fa-solid fa-arrow-right"></i></span>
-              </button>
+                Learn More
+                <span class="text-secondary"
+                  ><i class="fa-solid fa-arrow-right group-hover:text-white"></i
+                ></span>
+              </a>
             </div>
           </div>
         </section>
@@ -229,19 +246,22 @@
                 Educational Needs of Students.
               </p>
             </div>
-            <div class="w-1/2">
-              <a href="" class="px-6 py-2 block text-white text-center bg-primary  hover:text-yellow-500 duration-300 rounded-full">
+            <div class="w-1/2 md:w-2/8">
+              <a
+                href=""
+                class="px-6 py-2 block text-white text-center bg-primary hover:text-yellow-500 duration-300 rounded-full"
+              >
                 Apply Now
               </a>
             </div>
           </div>
           <!-- image and cards  -->
-          <div
-            class="flex justify-center items-center py-18 gap-4"
-          >
+          <div class="flex w-full justify-center items-center py-18 gap-4">
             <!-- image  -->
-            <div class="hidden lg:block">
-              <div class="w-100 h-100 rounded-full overflow-hidden mx-auto border-22 border-white">
+            <div class="hidden w-1/2 lg:block">
+              <div
+                class="w-100 h-100 rounded-full overflow-hidden mx-auto border-22 border-white"
+              >
                 <img
                   class="w-full h-full object-cover"
                   src="https://www.dis.edu.bd/uploads/shortcodes/Sr%20students-min-compressed%20(1)-1694404099.webp"
@@ -251,7 +271,9 @@
             </div>
 
             <!-- cards container  -->
-            <div class="hidden w-full md:grid grid-cols-2 lg:grid-cols-3 rounded-2xl  overflow-hidden">
+            <div
+              class="hidden w-full lg:w-1/2 md:grid grid-cols-3 lg:grid-cols-3 rounded-2xl overflow-hidden"
+            >
               <!-- card 1 -->
               <div class="bg-white px-4 py-12 group relative overflow-hidden">
                 <div class="flex flex-col gap-4 text-center relative z-0">
@@ -274,7 +296,9 @@
                   <div
                     class="absolute inset-0 bg-black/50 flex items-center justify-center"
                   >
-                    <div class="flex flex-col gap-6 justify-center items-center">
+                    <div
+                      class="flex flex-col gap-6 justify-center items-center"
+                    >
                       <h2 class="text-white text-xl">Day Care</h2>
                       <a
                         href=""
@@ -293,29 +317,33 @@
               </div>
 
               <!-- card 2 -->
-                <div class="bg-white px-4 py-12 group relative overflow-hidden">
+              <div
+                class="bg-blue-200 px-4 py-12 group relative overflow-hidden"
+              >
                 <div class="flex flex-col gap-4 text-center relative z-0">
                   <img
                     class="size-16 mx-auto group-hover:hidden transition duration-300"
-                    src="/src/assets/icons/daycare.png"
+                    src="/src/assets/icons/bus.png"
                     alt="freepick"
                   />
                   <h2
                     class="text-primary text-2xl font-semibold group-hover:text-white transition duration-300"
                   >
-                    Day Care
+                    Safe Transport
                   </h2>
                 </div>
 
                 <!-- Hover Background Image with Overlay and Button -->
                 <div
-                  class="absolute inset-0 px-4 py-12 bg-cover bg-center bg-no-repeat opacity-0 group-hover:opacity-100 transition duration-300 z-10 bg-[url('https://img.freepik.com/free-photo/front-view-girl-learning-math-school_23-2150470828.jpg?t=st=1745569759~exp=1745573359~hmac=7bbf4fe3c7ef6338d419fa27693e3e20c04a2340202abd37856951459e7353ff&w=996')]"
+                  class="absolute inset-0 px-4 py-12 bg-cover bg-center bg-no-repeat opacity-0 group-hover:opacity-100 transition duration-300 z-10 bg-[url('https://img.freepik.com/free-photo/children-car-go-school-happy-sweet-faces-sisters_169016-3705.jpg?t=st=1745574089~exp=1745577689~hmac=45092bd171590e295de6899657ee3786260d8d3a3dd2dcef71dd423790af9a7d&w=996')]"
                 >
                   <div
                     class="absolute inset-0 bg-black/50 flex items-center justify-center"
                   >
-                    <div class="flex flex-col gap-6 justify-center items-center">
-                      <h2 class="text-white text-xl">Day Care</h2>
+                    <div
+                      class="flex flex-col gap-6 justify-center items-center"
+                    >
+                      <h2 class="text-white text-xl">Safe Transport</h2>
                       <a
                         href=""
                         class="text-white px-2 py-1 rounded-full border hover-secondary group transform duration-300"
@@ -332,29 +360,31 @@
                 </div>
               </div>
               <!-- card 3 -->
-                <div class="bg-white px-4 py-12 group relative overflow-hidden">
+              <div class="bg-white px-4 py-12 group relative overflow-hidden">
                 <div class="flex flex-col gap-4 text-center relative z-0">
                   <img
                     class="size-16 mx-auto group-hover:hidden transition duration-300"
-                    src="/src/assets/icons/daycare.png"
+                    src="/src/assets/icons/laboratory.png"
                     alt="freepick"
                   />
                   <h2
                     class="text-primary text-2xl font-semibold group-hover:text-white transition duration-300"
                   >
-                    Day Care
+                    STEM Labs
                   </h2>
                 </div>
 
                 <!-- Hover Background Image with Overlay and Button -->
                 <div
-                  class="absolute inset-0 px-4 py-12 bg-cover bg-center bg-no-repeat opacity-0 group-hover:opacity-100 transition duration-300 z-10 bg-[url('https://img.freepik.com/free-photo/front-view-girl-learning-math-school_23-2150470828.jpg?t=st=1745569759~exp=1745573359~hmac=7bbf4fe3c7ef6338d419fa27693e3e20c04a2340202abd37856951459e7353ff&w=996')]"
+                  class="absolute inset-0 px-4 py-12 bg-cover bg-center bg-no-repeat opacity-0 group-hover:opacity-100 transition duration-300 z-10 bg-[url('https://img.freepik.com/free-photo/girl-teacher-doing-science-experiments-with-microscope_23-2148799251.jpg?t=st=1745574224~exp=1745577824~hmac=c2d6b07e51f5a48fa61c7dac234ff519f0b1d5c352ff3b39fc7e6a12b3958a50&w=996')]"
                 >
                   <div
                     class="absolute inset-0 bg-black/50 flex items-center justify-center"
                   >
-                    <div class="flex flex-col gap-6 justify-center items-center">
-                      <h2 class="text-white text-xl">Day Care</h2>
+                    <div
+                      class="flex flex-col gap-6 justify-center items-center"
+                    >
+                      <h2 class="text-white text-xl">STEM Labs</h2>
                       <a
                         href=""
                         class="text-white px-2 py-1 rounded-full border hover-secondary group transform duration-300"
@@ -371,29 +401,33 @@
                 </div>
               </div>
               <!-- card 4 -->
-               <div class="bg-white px-4 py-12 group relative overflow-hidden">
+              <div
+                class="bg-blue-200 px-4 py-12 group relative overflow-hidden"
+              >
                 <div class="flex flex-col gap-4 text-center relative z-0">
                   <img
                     class="size-16 mx-auto group-hover:hidden transition duration-300"
-                    src="/src/assets/icons/daycare.png"
+                    src="/src/assets/icons/stack-of-books.png"
                     alt="freepick"
                   />
                   <h2
                     class="text-primary text-2xl font-semibold group-hover:text-white transition duration-300"
                   >
-                    Day Care
+                    Libraries
                   </h2>
                 </div>
 
                 <!-- Hover Background Image with Overlay and Button -->
                 <div
-                  class="absolute inset-0 px-4 py-12 bg-cover bg-center bg-no-repeat opacity-0 group-hover:opacity-100 transition duration-300 z-10 bg-[url('https://img.freepik.com/free-photo/front-view-girl-learning-math-school_23-2150470828.jpg?t=st=1745569759~exp=1745573359~hmac=7bbf4fe3c7ef6338d419fa27693e3e20c04a2340202abd37856951459e7353ff&w=996')]"
+                  class="absolute inset-0 px-4 py-12 bg-cover bg-center bg-no-repeat opacity-0 group-hover:opacity-100 transition duration-300 z-10 bg-[url('https://img.freepik.com/free-photo/laughing-children-looking-copybook-library_23-2147854121.jpg?t=st=1745574342~exp=1745577942~hmac=6fb3d3734360372739a108dba63271302d84bb22db415de628f6bec524854095&w=996')]"
                 >
                   <div
                     class="absolute inset-0 bg-black/50 flex items-center justify-center"
                   >
-                    <div class="flex flex-col gap-6 justify-center items-center">
-                      <h2 class="text-white text-xl">Day Care</h2>
+                    <div
+                      class="flex flex-col gap-6 justify-center items-center"
+                    >
+                      <h2 class="text-white text-xl">Libraries</h2>
                       <a
                         href=""
                         class="text-white px-2 py-1 rounded-full border hover-secondary group transform duration-300"
@@ -410,29 +444,31 @@
                 </div>
               </div>
               <!-- card 5 -->
-                <div class="bg-white px-4 py-12 group relative overflow-hidden">
+              <div class="bg-white px-4 py-12 group relative overflow-hidden">
                 <div class="flex flex-col gap-4 text-center relative z-0">
                   <img
                     class="size-16 mx-auto group-hover:hidden transition duration-300"
-                    src="/src/assets/icons/daycare.png"
+                    src="/src/assets/icons/culture.png"
                     alt="freepick"
                   />
                   <h2
                     class="text-primary text-2xl font-semibold group-hover:text-white transition duration-300"
                   >
-                    Day Care
+                    Clubs
                   </h2>
                 </div>
 
                 <!-- Hover Background Image with Overlay and Button -->
                 <div
-                  class="absolute inset-0 px-4 py-12 bg-cover bg-center bg-no-repeat opacity-0 group-hover:opacity-100 transition duration-300 z-10 bg-[url('https://img.freepik.com/free-photo/front-view-girl-learning-math-school_23-2150470828.jpg?t=st=1745569759~exp=1745573359~hmac=7bbf4fe3c7ef6338d419fa27693e3e20c04a2340202abd37856951459e7353ff&w=996')]"
+                  class="absolute inset-0 px-4 py-12 bg-cover bg-center bg-no-repeat opacity-0 group-hover:opacity-100 transition duration-300 z-10 bg-[url('https://img.freepik.com/free-photo/studying-classroom_1098-317.jpg?t=st=1745574466~exp=1745578066~hmac=d53d56d61dfa5ed6d8923fed27568569b7fd4da4e4cdc966791786b28795cad0&w=996')]"
                 >
                   <div
                     class="absolute inset-0 bg-black/50 flex items-center justify-center"
                   >
-                    <div class="flex flex-col gap-6 justify-center items-center">
-                      <h2 class="text-white text-xl">Day Care</h2>
+                    <div
+                      class="flex flex-col gap-6 justify-center items-center"
+                    >
+                      <h2 class="text-white text-xl">Clubs</h2>
                       <a
                         href=""
                         class="text-white px-2 py-1 rounded-full border hover-secondary group transform duration-300"
@@ -449,29 +485,33 @@
                 </div>
               </div>
               <!-- card 6 -->
-                <div class="bg-white px-4 py-12 group relative overflow-hidden">
+              <div
+                class="bg-blue-200 px-4 py-12 group relative overflow-hidden"
+              >
                 <div class="flex flex-col gap-4 text-center relative z-0">
                   <img
                     class="size-16 mx-auto group-hover:hidden transition duration-300"
-                    src="/src/assets/icons/daycare.png"
+                    src="/src/assets/icons/working-mother.png"
                     alt="freepick"
                   />
                   <h2
                     class="text-primary text-2xl font-semibold group-hover:text-white transition duration-300"
                   >
-                    Day Care
+                    My e-kids
                   </h2>
                 </div>
 
                 <!-- Hover Background Image with Overlay and Button -->
                 <div
-                  class="absolute inset-0 px-4 py-12 bg-cover bg-center bg-no-repeat opacity-0 group-hover:opacity-100 transition duration-300 z-10 bg-[url('https://img.freepik.com/free-photo/front-view-girl-learning-math-school_23-2150470828.jpg?t=st=1745569759~exp=1745573359~hmac=7bbf4fe3c7ef6338d419fa27693e3e20c04a2340202abd37856951459e7353ff&w=996')]"
+                  class="absolute inset-0 px-4 py-12 bg-cover bg-center bg-no-repeat opacity-0 group-hover:opacity-100 transition duration-300 z-10 bg-[url('https://img.freepik.com/free-photo/high-angle-kids-with-skateboard-phone_23-2148480255.jpg?t=st=1745574553~exp=1745578153~hmac=0a796e16a1bb31422756d7f8f1edf24d98a4267df33ff86c70e7a4ef0b0fac5a&w=996')]"
                 >
                   <div
                     class="absolute inset-0 bg-black/50 flex items-center justify-center"
                   >
-                    <div class="flex flex-col gap-6 justify-center items-center">
-                      <h2 class="text-white text-xl">Day Care</h2>
+                    <div
+                      class="flex flex-col gap-6 justify-center items-center"
+                    >
+                      <h2 class="text-white text-xl">My e-kids</h2>
                       <a
                         href=""
                         class="text-white px-2 py-1 rounded-full border hover-secondary group transform duration-300"
@@ -627,11 +667,11 @@
         <section>
           <div class="py-12">
             <div
-              class="grid grid-cols-1 md:grid-cols-2 py-12 gap-4 bg-white px-6 rounded-2xl"
+              class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 py-12 gap-4 bg-white px-6 rounded-2xl"
             >
               <!-- text  -->
-              <div class="place-items-start space-y-8 place-self-center">
-                <h1 class="text-6xl text-primary">
+              <div class="w-full space-y-8 place-self-center">
+                <h1 class=" text-xl md:text-4xl lg:text-6xl text-primary">
                   Children must be taught how to think, not what to think.
                 </h1>
                 <p>- Margaret Mead</p>
@@ -640,7 +680,7 @@
                 </p>
               </div>
               <!-- image  -->
-              <div class="flex justify-center">
+              <div class=" justify-center hidden lg:flex">
                 <img
                   class="rounded-2xl"
                   src="https://img.freepik.com/free-photo/smart-student-holding-file_1098-3425.jpg?t=st=1745557325~exp=1745560925~hmac=b86fd55b4c50e726c27b80e74f35661ca21a443e286f6f320c5138397466ad25&w=1380"
@@ -663,8 +703,11 @@
                 Educational Needs of Students.
               </p>
             </div>
-            <div class="w-1/2">
-              <a href="" class="px-6 py-2 block text-white text-center bg-primary  hover:text-yellow-500 duration-300 rounded-full">
+            <div class="w-1/2 md:w-2/8">
+              <a
+                href=""
+                class="px-6 py-2 block text-white text-center bg-primary hover:text-yellow-500 duration-300 rounded-full"
+              >
                 See All
               </a>
             </div>
@@ -687,11 +730,15 @@
                 nisi!...
               </p>
 
-              <button
-                class="text-white px-4 py-2 rounded-full shadow-sm bg-yellow-500"
+              <a
+                href=""
+                class="text-white bg-primary text-center px-4 py-2 rounded-full border hover-secondary group transform duration-300"
               >
-                Learn More <span><i class="fa-solid fa-arrow-right"></i></span>
-              </button>
+                Learn More
+                <span class="text-secondary"
+                  ><i class="fa-solid fa-arrow-right group-hover:text-white"></i
+                ></span>
+              </a>
             </div>
             <!-- card 2 -->
             <div class="bg-white rounded-2xl shadow-md p-4 flex flex-col gap-4">
@@ -710,11 +757,15 @@
                 nisi!...
               </p>
 
-              <button
-                class="text-white px-4 py-2 rounded-full shadow-sm bg-yellow-500"
+              <a
+                href=""
+                class="text-white bg-primary text-center px-4 py-2 rounded-full border hover-secondary group transform duration-300"
               >
-                Learn More <span><i class="fa-solid fa-arrow-right"></i></span>
-              </button>
+                Learn More
+                <span class="text-secondary"
+                  ><i class="fa-solid fa-arrow-right group-hover:text-white"></i
+                ></span>
+              </a>
             </div>
             <!-- card 3 -->
             <div class="bg-white rounded-2xl shadow-md p-4 flex flex-col gap-4">
@@ -732,11 +783,15 @@
                 nisi!...
               </p>
 
-              <button
-                class="text-white px-4 py-2 rounded-full shadow-sm bg-yellow-500"
+              <a
+                href=""
+                class="text-white bg-primary text-center px-4 py-2 rounded-full border hover-secondary group transform duration-300"
               >
-                Learn More <span><i class="fa-solid fa-arrow-right"></i></span>
-              </button>
+                Learn More
+                <span class="text-secondary"
+                  ><i class="fa-solid fa-arrow-right group-hover:text-white"></i
+                ></span>
+              </a>
             </div>
           </div>
         </section>
@@ -762,55 +817,70 @@
               class="bg-white rounded-2xl shadow-md flex flex-col gap-4 pb-4"
             >
               <img
-                class="w-full h-64 md:h-100 mx-auto rounded-t-lg object-cover"
+                class="w-full h-64 lg:h-100 mx-auto rounded-t-lg object-cover"
                 src="https://www.dis.edu.bd/uploads/branch/left-1-1676785177.webp"
                 alt="freepick"
               />
 
               <div class="p-4 space-y-4">
                 <h2 class="text-primary text-2xl font-semibold">Dhanmondi</h2>
-                <button
-                  class="text-primary px-4 py-2 rounded-full shadow-lg border text-lg"
+                <a
+                  href=""
+                  class="text-white bg-primary text-center px-4 py-2 rounded-full border hover-secondary group transform duration-300"
                 >
                   Learn More
-                  <span><i class="fa-solid fa-arrow-right"></i></span>
-                </button>
+                  <span class="text-secondary"
+                    ><i
+                      class="fa-solid fa-arrow-right group-hover:text-white"
+                    ></i
+                  ></span>
+                </a>
               </div>
             </div>
             <!-- card 2 -->
-            <div class="bg-white rounded-2xl shadow-md flex flex-col gap-4">
+            <div class="bg-white rounded-2xl shadow-md flex flex-col gap-4 pb-4">
               <img
-                class="w-full h-64 md:h-100 mx-auto rounded-t-lg object-cover"
+                class="w-full h-64 lg:h-100 mx-auto rounded-t-lg object-cover"
                 src="https://www.dis.edu.bd/uploads/branch/web6-1676803758.webp"
                 alt="freepick"
               />
 
               <div class="p-4 space-y-4">
                 <h2 class="text-primary text-2xl font-semibold">Gazipur</h2>
-                <button
-                  class="text-primary px-4 py-2 rounded-full shadow-lg border text-lg"
+                <a
+                  href=""
+                  class="text-white bg-primary text-center px-4 py-2 rounded-full border hover-secondary group transform duration-300"
                 >
                   Learn More
-                  <span><i class="fa-solid fa-arrow-right"></i></span>
-                </button>
+                  <span class="text-secondary"
+                    ><i
+                      class="fa-solid fa-arrow-right group-hover:text-white"
+                    ></i
+                  ></span>
+                </a>
               </div>
             </div>
             <!-- card 3 -->
-            <div class="bg-white rounded-2xl shadow-md flex flex-col gap-4">
+            <div class="bg-white rounded-2xl shadow-md flex flex-col gap-4 pb-4">
               <img
-                class="w-full h-64 md:h-100 mx-auto rounded-t-lg"
+                class="w-full h-64 lg:h-100 mx-auto rounded-t-lg"
                 src="https://www.dis.edu.bd/uploads/branch/WhatsApp%20Image%202024-03-23%20at%2013.35.50-1711956018.webp"
                 alt="freepick"
               />
 
               <div class="p-4 space-y-4">
                 <h2 class="text-primary text-2xl font-semibold">Bonani</h2>
-                <button
-                  class="text-primary px-4 py-2 rounded-full shadow-lg border text-lg"
+                <a
+                  href=""
+                  class="text-white bg-primary text-center px-4 py-2 rounded-full border hover-secondary group transform duration-300"
                 >
                   Learn More
-                  <span><i class="fa-solid fa-arrow-right"></i></span>
-                </button>
+                  <span class="text-secondary"
+                    ><i
+                      class="fa-solid fa-arrow-right group-hover:text-white"
+                    ></i
+                  ></span>
+                </a>
               </div>
             </div>
           </div>
@@ -897,7 +967,7 @@
                   class="px-8 py-4 w-full border border-yellow-500 rounded-full"
                 />
                 <button
-                  class="absolute bg-yellow-500 size-12 right-2 top-1 text-white rounded-full"
+                  class="absolute hover-primary duration-300 bg-yellow-500 size-12 right-2 top-1 text-white rounded-full"
                 >
                   <i class="fa-solid fa-angle-right"></i>
                 </button>
