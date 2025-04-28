@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libraries</title>
+    <!-- tailwindcss  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/src/css/main.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="m-0 flex flex-col min-h-screen bg-[#edf6fa]">
+    <!-- header  -->
+    <header class="">
+      <!-- Navbar -->
+      <nav
+        id="navbar"
+        class="text-primary text-xl px-8 md:px-16 lg:px-22 py-4 fixed top-0 left-0 z-50 w-full"
+      >
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-12">
+            <img
+              class="w-32"
+              src="https://www.dis.edu.bd/uploads/shortcodes/dis-new-1676290938.webp"
+              alt=""
+            />
+
+            <!-- Desktop Menu -->
+            <ul id="navLinks" class="hidden md:flex gap-6">
+              <li><a href="#" class="hover:text-[#e3a507]">Admission</a></li>
+              <li><a href="#" class="hover:text-[#e3a507]">Branches</a></li>
+              <li><a href="#" class="hover:text-[#e3a507]">Academic</a></li>
+              <li><a href="#" class="hover:text-[#e3a507]">Facilities</a></li>
+              <li><a href="#" class="hover:text-[#e3a507]">About US</a></li>
+            </ul>
+          </div>
+
+          <!-- Hamburger & Cross -->
+          <div id="menuToggle" class="md:hidden cursor-pointer">
+            <!-- Hamburger Icon -->
+            <svg
+              id="hamburgerIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <!-- Cross Icon -->
+            <svg
+              id="closeIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <ul
+          id="mobileMenu"
+          class="md:hidden hidden flex-col mt-4 overflow-y-auto space-y-2 px-4"
+        >
+          <li><a href="#" class="hover:text-[#e3a507]">Admission</a></li>
+          <li><a href="#" class="hover:text-[#e3a507]">Branches</a></li>
+          <li><a href="#" class="hover:text-[#e3a507]">Academic</a></li>
+          <li><a href="#" class="hover:text-[#e3a507]">Facilities</a></li>
+          <li><a href="#" class="hover:text-[#e3a507]">About US</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main container  -->
+    <main class="py-36">
+      <!-- text and image  -->
+      <div class="grid grid-cols-1 md:grid-cols-2 py-12 gap-8 px-8 md:px-22">
+        <!-- text  -->
+        <div class="space-y-8">
+          <h2 class="text-5xl text-primary">Libraries</h2>
+          <p class="text-secondary">17 jan 2025</p>
+          <div class="text-left">
+            <p>
+              As part of the Daffodil family, Daffodil International University
+              creates opportunities for their stakeholders. The female students,
+              faculties and staff who have children and are not able to take
+              care of them at home during their study/ working hours. With a
+              view to supporting these students, faculties, staff, the
+              university has established a Daycare Center. These policy
+              guidelines will help function the Daffodil Angel’s Daycare in a
+              professional manner.
+            </p>
+          </div>
+        </div>
+        <!-- image  -->
+        <div class="hidden md:block">
+          <img class="size-100" src="/src/assets/icons/stack-of-books.png" alt="" />
+        </div>
+      </div>
+
+      <!-- cards container  -->
+      <div class="px-8 md:px-22">
+        <h1
+          class="text-primary text-center md:text-left text-2xl md:text-5xl font-bold mb-8 w-full"
+        >
+          More Facilities
+        </h1>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 rounded-2xl bg-white gap-6 p-4 mx-4 md:mx-0"
+        >
+          <!-- card 1 -->
+          <div class="bg-blue-200 p-4 flex flex-col gap-4 rounded-2xl">
+            <img
+              class="size-50 mx-auto"
+              src="/src/assets/icons/bus.png"
+              alt="freepick"
+            />
+            <p class="text-secondary">Jan 17, 2023</p>
+            <h2 class="text-primary text-2xl font-semibold">Safe Transport</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+              nisi!...
+            </p>
+
+            <a
+              href="/src/pages/facilities/safeTransport.html"
+              class="text-white bg-primary text-center px-4 py-2 rounded-full border hover-secondary group transform duration-300"
+            >
+              Learn More
+              <span class="text-secondary"
+                ><i class="fa-solid fa-arrow-right group-hover:text-white"></i
+              ></span>
+            </a>
+          </div>
+
+          <!-- card 2 -->
+          <div class="bg-blue-200 p-4 flex flex-col gap-4 rounded-2xl">
+            <img
+              class="size-50 mx-auto"
+              src="/src/assets/icons/laboratory.png"
+              alt="freepick"
+            />
+            <p class="text-secondary">Jan 17, 2023</p>
+            <h2 class="text-primary text-2xl font-semibold">STEM Labs</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+              nisi!...
+            </p>
+
+            <a
+              href="/src/pages/facilities/stemLab.html"
+              class="text-white bg-primary text-center px-4 py-2 rounded-full border hover-secondary group transform duration-300"
+            >
+              Learn More
+              <span class="text-secondary"
+                ><i class="fa-solid fa-arrow-right group-hover:text-white"></i
+              ></span>
+            </a>
+          </div>
+
+          <!-- card 3 -->
+          <div class="bg-blue-200 p-4 flex flex-col gap-4 rounded-2xl">
+            <img
+              class="size-50 mx-auto"
+              src="/src/assets/icons/daycare.png"
+              alt="freepick"
+            />
+            <p class="text-secondary">Jan 17, 2023</p>
+            <h2 class="text-primary text-2xl font-semibold">Day Care</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+              nisi!...
+            </p>
+
+            <a
+              href="/src/pages/facilities/dayCare.html"
+              class="text-white bg-primary text-center px-4 py-2 rounded-full border hover-secondary group transform duration-300"
+            >
+              Learn More
+              <span class="text-secondary"
+                ><i class="fa-solid fa-arrow-right group-hover:text-white"></i
+              ></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer  -->
+    <footer>
+      <div>
+        <!-- menu  -->
+        <div
+          class="bg-gray-800 py-8 px-10 text-white flex justify-between flex-col md:flex-row"
+        >
+          <!-- div 1  -->
+          <div>
+            <h1 class="py-2">logo</h1>
+            <div class="space-y-2">
+              <p>email</p>
+              <p>phone number</p>
+            </div>
+          </div>
+          <!-- div 2  -->
+          <div>
+            <h2 class="text-secondary text-2xl font-medium py-2">Navigation</h2>
+            <div class="space-y-2">
+              <a class="block" href="">Faculty</a>
+              <a class="block" href="">Teachers</a>
+            </div>
+          </div>
+          <!-- div 3  -->
+          <div>
+            <h2 class="text-secondary text-2xl font-medium py-2">
+              Important Links
+            </h2>
+            <div class="space-y-2">
+              <a class="block" href="">Achievement</a>
+              <a class="block" href="">DIS Blog</a>
+              <a class="block" href="">List of Foreign Guests</a>
+              <a class="block" href="">Photo Achieved</a>
+              <a class="block" href="">Career</a>
+              <a class="block" href="">FAQ</a>
+            </div>
+          </div>
+          <!-- div 4  -->
+          <div>
+            <h2 class="text-secondary text-2xl font-medium py-2">Management</h2>
+            <div>
+              <a class="block" href="">Management</a>
+              <a class="block" href="">Academic Head</a>
+            </div>
+          </div>
+        </div>
+        <!-- copyright and icons  -->
+        <div
+          class="bg-yellow-500 py-8 px-4 flex flex-col sm:flex-row justify-between items-center"
+        >
+          <div><p>Copy right---</p></div>
+          <!-- social iocns  -->
+          <div class="space-x-4">
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-square-facebook text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-youtube text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-square-x-twitter text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-square-instagram text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-linkedin text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-forumbee text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- script  -->
+    <script src="/src/js/Navbar.js"></script>
+  </body>
+</html>

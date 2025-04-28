@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact Us</title>
+    <!-- tailwindcss  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/src/css/main.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="m-0 flex flex-col min-h-screen bg-[#edf6fa]">
+    <!-- header  -->
+    <header class="">
+      <!-- Navbar -->
+      <nav
+        id="navbar"
+        class="text-primary text-xl px-8 md:px-16 lg:px-22 py-4 fixed top-0 left-0 z-50 w-full"
+      >
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-12">
+            <img
+              class="w-32"
+              src="https://www.dis.edu.bd/uploads/shortcodes/dis-new-1676290938.webp"
+              alt=""
+            />
+
+            <!-- Desktop Menu -->
+            <ul id="navLinks" class="hidden md:flex gap-6">
+              <li><a href="#" class="hover:text-[#e3a507]">Admission</a></li>
+              <li><a href="#" class="hover:text-[#e3a507]">Branches</a></li>
+              <li><a href="#" class="hover:text-[#e3a507]">Academic</a></li>
+              <li><a href="#" class="hover:text-[#e3a507]">Facilities</a></li>
+              <li><a href="#" class="hover:text-[#e3a507]">About US</a></li>
+            </ul>
+          </div>
+
+          <!-- Hamburger & Cross -->
+          <div id="menuToggle" class="md:hidden cursor-pointer">
+            <!-- Hamburger Icon -->
+            <svg
+              id="hamburgerIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <!-- Cross Icon -->
+            <svg
+              id="closeIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <ul
+          id="mobileMenu"
+          class="md:hidden hidden flex-col mt-4 overflow-y-auto space-y-2 px-4"
+        >
+          <li><a href="#" class="hover:text-[#e3a507]">Admission</a></li>
+          <li><a href="#" class="hover:text-[#e3a507]">Branches</a></li>
+          <li><a href="#" class="hover:text-[#e3a507]">Academic</a></li>
+          <li><a href="#" class="hover:text-[#e3a507]">Facilities</a></li>
+          <li><a href="#" class="hover:text-[#e3a507]">About US</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main container  -->
+    <main class="py-16 px-8 lg:px-22">
+      <!-- address  -->
+      <div>
+        <div
+          class="flex flex-wrap items-center justify-center p-6 w-full m-auto"
+        >
+          <!-- Left Side: Heading and Info -->
+          <div
+            class="w-full md:w-1/2 p-6 text-center md:text-left"
+            id="contact"
+          >
+            <div class="flex-column xxl:flex mt-8 mb-10 w-full justify-between">
+                <!-- =============== -->
+              <div class="text-start mb-6">
+                <h2
+                  class="text-start text-2xl underline underline-offset-4 mb-6"
+                >
+                  Dhanmondi(English Medium):
+                </h2>
+                <p>House: #11, Road #14, Dhanmondi, Dhaka-1209</p>
+                <p>Phone: +8802-58157516, +8802-58153343</p>
+                <p>Cell: 01713493291</p>
+                <p>E-mail: info@dis.edu.bd</p>
+              </div>
+              <!-- ================= -->
+              <div class="text-start">
+                <h2
+                  class="text-start text-2xl underline underline-offset-8 mb-6"
+                >
+                  Dhanmondi(English Version):
+                </h2>
+                <p>Office:House: #09, Road #14, Dhanmondi R/A, Dhaka-1209</p>
+                <p>Phone: +8802223371658, +8802223371659</p>
+                <p>Cell: 01847334774</p>
+                <p>E-mail: io.dh3@dis.edu.bd</p>
+              </div>
+                <!-- ================= -->
+              <div class="text-start">
+                <h2
+                  class="text-start text-2xl underline underline-offset-8 my-6"
+                >
+                 Uttara(English Medium):
+                </h2>
+                <p>Rupayan City, Sector-12,Khalpar,Dhaka-1216,Bangladesh, Hotline:09617901501 (8 AM - 5 PM , except on Friday & holidays)</p>
+                <p>Phone: +88 01847027534</p>
+                <p>Cell: 01847334774</p>
+                <p>E-mail: iodh2@dis.edu.bd</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side: Form -->
+          <div
+            class="w-full md:w-1/2 p-2 md:p-6 shadow-lg rounded-lg py-10 md:py-20 px-6 md:px-12 text-primary"
+          >
+            <form class="space-y-4">
+              <!-- Name Input -->
+              <div>
+                <label for="name" class="block text-sm font-medium"
+                  >Your Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="mt-1 block w-full rounded-md border border-black p-2 text-black outline-none"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <!-- Email Input -->
+              <div>
+                <label for="email" class="block text-sm font-medium"
+                  >Your Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="mt-1 block w-full rounded-md border border-black p-2 text-black outline-none"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <!-- companyname -->
+              <div>
+                <label for="name" class="block text-sm font-medium"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="mt-1 block w-full rounded-md border border-black p-2 text-black outline-none"
+                  placeholder="Enter Subject"
+                />
+              </div>
+
+              <!-- Message Textarea -->
+              <div>
+                <label for="message" class="block text-sm font-medium"
+                  >Your Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="mt-1 block w-full rounded-md border border-black p-2 text-black outline-none"
+                  placeholder="Enter your message"
+                ></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div>
+                <button
+                  type="submit"
+                  class="w-full bg-secondary py-2 px-4 rounded-md hover:bg-white outline-none transition-all duration-300 cursor-pointer hover-primary hover:text-yellow-600 text-xl font-semibold"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div>
+          <img src="" alt="" />
+        </div>
+      </div>
+
+      <!-- map  -->
+      <div class="py-12 flex flex-wrap justify-between items-center">
+         <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6942.383999319773!2d90.37148734176745!3d23.751509014678057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf4c1c2e3025%3A0x497bb292796b709b!2sDaffodil%20International%20School!5e1!3m2!1sen!2sbd!4v1745828540270!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+       <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.8665369120117!2d90.37697177511924!3d23.875940978585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c40bcf246a25%3A0xb68765768cffd1d4!2sRupayan%20City%20Uttara!5e1!3m2!1sen!2sbd!4v1745828701070!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+      </div>
+      <!-- Branches  -->
+        <section class="pb-16">
+          <!-- text  -->
+          <div
+            class="flex justify-between flex-col md:flex-row md:items-center py-6 gap-3"
+          >
+            <div class="space-y-4">
+              <h1 class="text-primary text-4xl font-bold">Our Branches</h1>
+              <p>
+                Explore Our Comprehensive Academic Program, Catering to the
+                Educational Needs of Students.
+              </p>
+            </div>
+          </div>
+          <!-- cards container  -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+            <!-- card 1 -->
+            <div
+              class="bg-white rounded-2xl shadow-md flex flex-col gap-4 pb-4"
+            >
+              <img
+                class="w-full h-64 lg:h-100 mx-auto rounded-t-lg object-cover"
+                src="https://www.dis.edu.bd/uploads/branch/left-1-1676785177.webp"
+                alt="freepick"
+              />
+
+              <div class="p-4 space-y-4">
+                <h2 class="text-primary text-2xl font-semibold">Dhanmondi</h2>
+                <a
+                  href=""
+                  class="text-white bg-primary text-center px-4 py-2 rounded-full border hover-secondary group transform duration-300"
+                >
+                  Learn More
+                  <span class="text-secondary"
+                    ><i
+                      class="fa-solid fa-arrow-right group-hover:text-white"
+                    ></i
+                  ></span>
+                </a>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="bg-white rounded-2xl shadow-md flex flex-col gap-4 pb-4">
+              <img
+                class="w-full h-64 lg:h-100 mx-auto rounded-t-lg object-cover"
+                src="https://www.dis.edu.bd/uploads/branch/web6-1676803758.webp"
+                alt="freepick"
+              />
+
+              <div class="p-4 space-y-4">
+                <h2 class="text-primary text-2xl font-semibold">Gazipur</h2>
+                <a
+                  href=""
+                  class="text-white bg-primary text-center px-4 py-2 rounded-full border hover-secondary group transform duration-300"
+                >
+                  Learn More
+                  <span class="text-secondary"
+                    ><i
+                      class="fa-solid fa-arrow-right group-hover:text-white"
+                    ></i
+                  ></span>
+                </a>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="bg-white rounded-2xl shadow-md flex flex-col gap-4 pb-4">
+              <img
+                class="w-full h-64 lg:h-100 mx-auto rounded-t-lg"
+                src="https://www.dis.edu.bd/uploads/branch/WhatsApp%20Image%202024-03-23%20at%2013.35.50-1711956018.webp"
+                alt="freepick"
+              />
+
+              <div class="p-4 space-y-4">
+                <h2 class="text-primary text-2xl font-semibold">Bonani</h2>
+                <a
+                  href=""
+                  class="text-white bg-primary text-center px-4 py-2 rounded-full border hover-secondary group transform duration-300"
+                >
+                  Learn More
+                  <span class="text-secondary"
+                    ><i
+                      class="fa-solid fa-arrow-right group-hover:text-white"
+                    ></i
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <!-- footer  -->
+    <footer>
+      <div>
+        <!-- menu  -->
+        <div
+          class="bg-gray-800 py-8 px-10 text-white flex justify-between flex-col md:flex-row"
+        >
+          <!-- div 1  -->
+          <div>
+            <h1 class="py-2">logo</h1>
+            <div class="space-y-2">
+              <p>email</p>
+              <p>phone number</p>
+            </div>
+          </div>
+          <!-- div 2  -->
+          <div>
+            <h2 class="text-secondary text-2xl font-medium py-2">Navigation</h2>
+            <div class="space-y-2">
+              <a class="block" href="">Faculty</a>
+              <a class="block" href="">Teachers</a>
+            </div>
+          </div>
+          <!-- div 3  -->
+          <div>
+            <h2 class="text-secondary text-2xl font-medium py-2">
+              Important Links
+            </h2>
+            <div class="space-y-2">
+              <a class="block" href="">Achievement</a>
+              <a class="block" href="">DIS Blog</a>
+              <a class="block" href="">List of Foreign Guests</a>
+              <a class="block" href="">Photo Achieved</a>
+              <a class="block" href="">Career</a>
+              <a class="block" href="">FAQ</a>
+            </div>
+          </div>
+          <!-- div 4  -->
+          <div>
+            <h2 class="text-secondary text-2xl font-medium py-2">Management</h2>
+            <div>
+              <a class="block" href="">Management</a>
+              <a class="block" href="">Academic Head</a>
+            </div>
+          </div>
+        </div>
+        <!-- copyright and icons  -->
+        <div
+          class="bg-yellow-500 py-8 px-4 flex flex-col sm:flex-row justify-between items-center"
+        >
+          <div><p>Copy right---</p></div>
+          <!-- social iocns  -->
+          <div class="space-x-4">
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-square-facebook text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-youtube text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-square-x-twitter text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-square-instagram text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-linkedin text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-forumbee text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- script  -->
+    <script src="/src/js/Navbar.js"></script>
+  </body>
+</html>
