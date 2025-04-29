@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notice</title>
+    <!-- tailwindcss  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/src/css/main.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="m-0 flex flex-col min-h-screen bg-[#edf6fa]">
+    <!-- header  -->
+    <header class="">
+      <!-- Navbar -->
+      <nav
+        id="navbar"
+        class="text-primary text-xl px-8 md:px-16 lg:px-22 py-4 fixed top-0 left-0 z-50 w-full"
+      >
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-12">
+            <a href="/index.html">
+              <img
+                class="w-32"
+                src="https://www.dis.edu.bd/uploads/shortcodes/dis-new-1676290938.webp"
+                alt=""
+              />
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul id="navLinks" class="hidden md:flex gap-6 uppercase">
+              <li><a href="#" class="hover:text-[#e3a507]">Admission</a></li>
+              <li><a href="#" class="hover:text-[#e3a507]">Branches</a></li>
+              <li><a href="#" class="hover:text-[#e3a507]">Academic</a></li>
+              <li><a href="#" class="hover:text-[#e3a507]">Facilities</a></li>
+              <li><a href="#" class="hover:text-[#e3a507]">About US</a></li>
+              <li>
+                <a
+                  href="/src/pages/contact/contactUs.html"
+                  class="hover:text-[#e3a507]"
+                  >Contact US</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Hamburger & Cross -->
+          <div id="menuToggle" class="md:hidden cursor-pointer">
+            <!-- Hamburger Icon -->
+            <svg
+              id="hamburgerIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <!-- Cross Icon -->
+            <svg
+              id="closeIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <ul
+          id="mobileMenu"
+          class="md:hidden hidden flex-col mt-4 overflow-y-auto space-y-2 px-4 uppercase"
+        >
+          <li><a href="#" class="hover:text-[#e3a507]">Admission</a></li>
+          <li><a href="#" class="hover:text-[#e3a507]">Branches</a></li>
+          <li><a href="#" class="hover:text-[#e3a507]">Academic</a></li>
+          <li><a href="#" class="hover:text-[#e3a507]">Facilities</a></li>
+          <li><a href="#" class="hover:text-[#e3a507]">About US</a></li>
+          <li>
+            <a
+              href="/src/pages/contact/contactUs.html"
+              class="hover:text-[#e3a507]"
+              >Contact US</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main container  -->
+    <main class="py-36">
+      <section class="py-12 my-0" id="exchange-rates">
+        <div class="w-11/12 mx-auto space-y-4 py-8">
+          <h1 class="text-4xl text-center font-bold">Notice Board</h1>
+          <p class="text-center w-11/12 mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+            repudiandae delectus quia provident cupiditate minus nisi deleniti
+            nihil vitae repellendus.
+          </p>
+        </div>
+
+        <div class="mx-2 lg:mx-8">
+          <div class="w-11/12 md:w-8/12 xl:w-full xl:px-8 mx-auto rounded-md">
+            <!-- Header Part -->
+            <div
+              class="hidden sm:grid sm:grid-cols-3 gap-y-4 sm:gap-y-0 p-4 border-b rounded-t-lg font-semibold text-primary text-sm sm:text-base"
+            >
+              <div class="text-left">Title</div>
+              <div class="text-right">Branch</div>
+              <div class="text-right">View</div>
+            </div>
+
+            <!-- Content Part -->
+            <div class="divide-y divide-gray-200">
+              <!-- Row -->
+              <div
+                class="sm:grid grid-cols-2 sm:grid-cols-3 gap-y-4 sm:gap-y-0 p-4 items-center text-gray-800 text-sm sm:text-base flex flex-col odd:bg-white"
+              >
+                <!-- Title -->
+                <div
+                  class="flex justify-between items-center sm:block text-left w-full"
+                >
+                  <p class="sm:hidden text-gray-500">Title</p>
+                  <p class="text-right sm:text-left">
+                    Memorandum of Understanding (MOU) singing ceremony between
+                    DIS & Laureate College and Terry Fox International School,
+                    Canada
+                  </p>
+                </div>
+                <!-- Branch -->
+                <div
+                  class="flex justify-between items-center sm:block text-left w-full"
+                >
+                  <p class="sm:hidden text-gray-500">Branch</p>
+                  <p class="text-right">EM, Dhanmondi</p>
+                </div>
+                <!-- View -->
+                <div
+                  class="w-full sm:text-right flex justify-between items-center sm:block text-left"
+                >
+                  <p class="sm:hidden text-gray-500">View</p>
+                  <button
+                    class="bg-secondary text-primary inline-block px-6 py-2 rounded-full font-semibold hover-primary hover:text-white transform duration-300 cursor-pointer"
+                  >
+                    view
+                  </button>
+                </div>
+              </div>
+
+              <!-- Row -->
+              <div
+                class="sm:grid grid-cols-2 sm:grid-cols-3 gap-y-4 sm:gap-y-0 p-4 items-center text-gray-800 text-sm sm:text-base flex flex-col odd:bg-white"
+              >
+                <!-- Title -->
+                <div
+                  class="flex justify-between items-center sm:block text-left w-full"
+                >
+                  <p class="sm:hidden text-gray-500">Title</p>
+                  <p class="text-right sm:text-left">
+                    Ramadan March Routine 2024
+                  </p>
+                </div>
+                <!-- Branch -->
+                <div
+                  class="flex justify-between items-center sm:block text-left w-full"
+                >
+                  <p class="sm:hidden text-gray-500">Branch</p>
+                  <p class="text-right">EM, Dhanmondi</p>
+                </div>
+                <!-- View -->
+                <div
+                  class="w-full sm:text-right flex justify-between items-center sm:block text-left"
+                >
+                  <p class="sm:hidden text-gray-500">View</p>
+                  <button
+                    class="bg-secondary text-primary inline-block px-6 py-2 rounded-full font-semibold hover-primary hover:text-white transform duration-300 cursor-pointer"
+                  >
+                    view
+                  </button>
+                </div>
+              </div>
+
+              <!-- Row -->
+              <div
+                class="sm:grid grid-cols-2 sm:grid-cols-3 gap-y-4 sm:gap-y-0 p-4 items-center text-gray-800 text-sm sm:text-base flex flex-col odd:bg-white"
+              >
+                <!-- Title -->
+                <div
+                  class="flex justify-between items-center sm:block text-left w-full"
+                >
+                  <p class="sm:hidden text-gray-500">Title</p>
+                  <p class="text-right sm:text-left">
+                    DIS Annual Sports 2024-Pre Section
+                  </p>
+                </div>
+                <!-- Branch -->
+                <div
+                  class="flex justify-between items-center sm:block text-left w-full"
+                >
+                  <p class="sm:hidden text-gray-500">Branch</p>
+                  <p class="text-right">EM, Dhanmondi</p>
+                </div>
+                <!-- View -->
+                <div
+                  class="w-full sm:text-right flex justify-between items-center sm:block text-left"
+                >
+                  <p class="sm:hidden text-gray-500">View</p>
+                  <button
+                    class="bg-secondary text-primary inline-block px-6 py-2 rounded-full font-semibold hover-primary hover:text-white transform duration-300 cursor-pointer"
+                  >
+                    view
+                  </button>
+                </div>
+              </div>
+
+              <!-- Row -->
+              <div
+                class="sm:grid grid-cols-2 sm:grid-cols-3 gap-y-4 sm:gap-y-0 p-4 items-center text-gray-800 text-sm sm:text-base flex flex-col odd:bg-white"
+              >
+                <!-- Title -->
+                <div
+                  class="flex justify-between items-center sm:block text-left w-full"
+                >
+                  <p class="sm:hidden text-gray-500">Title</p>
+                  <p class="text-right sm:text-left">
+                    PTM-2 will not take place on November 11th, 2023.
+                  </p>
+                </div>
+                <!-- Branch -->
+                <div
+                  class="flex justify-between items-center sm:block text-left w-full"
+                >
+                  <p class="sm:hidden text-gray-500">Branch</p>
+                  <p class="text-right">EM, Dhanmondi</p>
+                </div>
+                <!-- View -->
+                <div
+                  class="w-full sm:text-right flex justify-between items-center sm:block text-left"
+                >
+                  <p class="sm:hidden text-gray-500">View</p>
+                  <button
+                    class="bg-secondary text-primary inline-block px-6 py-2 rounded-full font-semibold hover-primary hover:text-white transform duration-300 cursor-pointer"
+                  >
+                    view
+                  </button>
+                </div>
+              </div>
+
+              <!-- Row -->
+              <div
+                class="sm:grid grid-cols-2 sm:grid-cols-3 gap-y-4 sm:gap-y-0 p-4 items-center text-gray-800 text-sm sm:text-base flex flex-col odd:bg-white"
+              >
+                <!-- Title -->
+                <div
+                  class="flex justify-between items-center sm:block text-left w-full"
+                >
+                  <p class="sm:hidden text-gray-500">Title</p>
+                  <p class="text-right sm:text-left">
+                    Notice: Exams, Holiday and Accounts
+                  </p>
+                </div>
+                <!-- Branch -->
+                <div
+                  class="flex justify-between items-center sm:block text-left w-full"
+                >
+                  <p class="sm:hidden text-gray-500">Branch</p>
+                  <p class="text-right">EM, Dhanmondi</p>
+                </div>
+                <!-- View -->
+                <div
+                  class="w-full sm:text-right flex justify-between items-center sm:block text-left"
+                >
+                  <p class="sm:hidden text-gray-500">View</p>
+                  <button
+                    class="bg-secondary text-primary inline-block px-6 py-2 rounded-full font-semibold hover-primary hover:text-white transform duration-300 cursor-pointer"
+                  >
+                    view
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer  -->
+    <footer>
+      <div>
+        <!-- menu  -->
+        <div
+          class="bg-gray-800 py-8 px-10 text-white flex justify-between flex-col md:flex-row"
+        >
+          <!-- div 1  -->
+          <div>
+            <h1 class="py-2">logo</h1>
+            <div class="space-y-2">
+              <p>email</p>
+              <p>phone number</p>
+            </div>
+          </div>
+          <!-- div 2  -->
+          <div>
+            <h2 class="text-secondary text-2xl font-medium py-2">Navigation</h2>
+            <div class="space-y-2">
+              <a class="block" href="">Faculty</a>
+              <a class="block" href="">Teachers</a>
+            </div>
+          </div>
+          <!-- div 3  -->
+          <div>
+            <h2 class="text-secondary text-2xl font-medium py-2">
+              Important Links
+            </h2>
+            <div class="space-y-2">
+              <a class="block" href="">Achievement</a>
+              <a class="block" href="">DIS Blog</a>
+              <a class="block" href="">List of Foreign Guests</a>
+              <a class="block" href="">Photo Achieved</a>
+              <a class="block" href="">Career</a>
+              <a class="block" href="">FAQ</a>
+            </div>
+          </div>
+          <!-- div 4  -->
+          <div>
+            <h2 class="text-secondary text-2xl font-medium py-2">Management</h2>
+            <div>
+              <a class="block" href="">Management</a>
+              <a class="block" href="">Academic Head</a>
+            </div>
+          </div>
+        </div>
+        <!-- copyright and icons  -->
+        <div
+          class="bg-yellow-500 py-8 px-4 flex flex-col sm:flex-row justify-between items-center"
+        >
+          <div><p>Copy right---</p></div>
+          <!-- social iocns  -->
+          <div class="space-x-4">
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-square-facebook text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-youtube text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-square-x-twitter text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-square-instagram text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-linkedin text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+            <a class="inline-block" href="">
+              <i
+                class="fa-brands fa-forumbee text-white hover:text-black first-letter:text-4xl"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- script  -->
+    <script src="/src/js/Navbar.js"></script>
+  </body>
+</html>
