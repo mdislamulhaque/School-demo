@@ -16,26 +16,53 @@
   <body class="m-0 flex flex-col min-h-screen bg-[#edf6fa]">
     <header class="">
       <!-- Navbar -->
-      <nav id="navbar" class="text-primary text-xl px-8 md:px-16 lg:px-22 py-4 fixed top-0 left-0 z-50 w-full">
+      <nav
+        id="navbar"
+        class="text-primary text-xl px-8 md:px-16 lg:px-22 py-4 fixed top-0 left-0 z-50 w-full"
+      >
         <div class="flex justify-between items-center">
           <div class="flex items-center gap-12">
             <a href="/index.html">
               <img
-              class="w-32"
-              src="https://www.dis.edu.bd/uploads/shortcodes/dis-new-1676290938.webp"
-              alt=""
-            />
+                class="w-32"
+                src="https://www.dis.edu.bd/uploads/shortcodes/dis-new-1676290938.webp"
+                alt=""
+              />
             </a>
 
             <!-- Desktop Menu -->
             <ul id="navLinks" class="hidden md:flex gap-6 uppercase">
               <li><a href="#" class="hover:text-[#e3a507]">Admission</a></li>
               <li><a href="#" class="hover:text-[#e3a507]">Branches</a></li>
-              <li><a href="#" class="hover:text-[#e3a507]">Academic</a></li>
+              <li><a href="#" id="academicBtn" class="hover:text-[#e3a507]">Academic</a></li>
               <li><a href="#" class="hover:text-[#e3a507]">Facilities</a></li>
               <li><a href="#" class="hover:text-[#e3a507]">About US</a></li>
-              <li><a href="/src/pages/contact/contactUs.html" class="hover:text-[#e3a507]">Contact US</a></li>
+              <li>
+                <a
+                  href="/src/pages/contact/contactUs.html"
+                  class="hover:text-[#e3a507]"
+                  >Contact US</a
+                >
+              </li>
             </ul>
+            <!-- Toggle Section -->
+            <div
+              id="academicSection"
+              class="hidden absolute w-full py-12 top-16 left-0 mt-4 bg-white p-4 rounded shadow text-gray-800 flex justify-between gap-8"
+            >
+              
+              <div class="w-1/2">
+                <img class="w-full rounded-2xl" src="https://www.dis.edu.bd/uploads/post/category/DIS-Campus-1693803325.webp" alt="">
+              </div>
+              <div class="w-1/2">
+                <h1 class="text-4xl font-semibold text-primary pb-6">Academic</h1>
+                <ul>
+                  <li>
+                     <a class="hover:text-yellow-600 transform duration-300" href="/src/pages/notice/notice.html">Notice Board</a>
+                </li>
+              </ul>
+              </div>
+            </div>
           </div>
 
           <!-- Hamburger & Cross -->
@@ -85,7 +112,13 @@
           <li><a href="#" class="hover:text-[#e3a507]">Academic</a></li>
           <li><a href="#" class="hover:text-[#e3a507]">Facilities</a></li>
           <li><a href="#" class="hover:text-[#e3a507]">About US</a></li>
-          <li><a href="/src/pages/contact/contactUs.html" class="hover:text-[#e3a507]">Contact US</a></li>
+          <li>
+            <a
+              href="/src/pages/contact/contactUs.html"
+              class="hover:text-[#e3a507]"
+              >Contact US</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -676,7 +709,7 @@
             >
               <!-- text  -->
               <div class="w-full space-y-8 place-self-center">
-                <h1 class=" text-xl md:text-4xl lg:text-6xl text-primary">
+                <h1 class="text-xl md:text-4xl lg:text-6xl text-primary">
                   Children must be taught how to think, not what to think.
                 </h1>
                 <p>- Margaret Mead</p>
@@ -685,7 +718,7 @@
                 </p>
               </div>
               <!-- image  -->
-              <div class=" justify-center hidden lg:flex">
+              <div class="justify-center hidden lg:flex">
                 <img
                   class="rounded-2xl"
                   src="https://img.freepik.com/free-photo/smart-student-holding-file_1098-3425.jpg?t=st=1745557325~exp=1745560925~hmac=b86fd55b4c50e726c27b80e74f35661ca21a443e286f6f320c5138397466ad25&w=1380"
@@ -843,7 +876,9 @@
               </div>
             </div>
             <!-- card 2 -->
-            <div class="bg-white rounded-2xl shadow-md flex flex-col gap-4 pb-4">
+            <div
+              class="bg-white rounded-2xl shadow-md flex flex-col gap-4 pb-4"
+            >
               <img
                 class="w-full h-64 lg:h-100 mx-auto rounded-t-lg object-cover"
                 src="https://www.dis.edu.bd/uploads/branch/web6-1676803758.webp"
@@ -866,7 +901,9 @@
               </div>
             </div>
             <!-- card 3 -->
-            <div class="bg-white rounded-2xl shadow-md flex flex-col gap-4 pb-4">
+            <div
+              class="bg-white rounded-2xl shadow-md flex flex-col gap-4 pb-4"
+            >
               <img
                 class="w-full h-64 lg:h-100 mx-auto rounded-t-lg"
                 src="https://www.dis.edu.bd/uploads/branch/WhatsApp%20Image%202024-03-23%20at%2013.35.50-1711956018.webp"

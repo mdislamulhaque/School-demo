@@ -12,6 +12,21 @@ window.addEventListener("scroll", () => {
   }
 });
 
+const btn = document.getElementById("academicBtn");
+const section = document.getElementById("academicSection");
+
+btn.addEventListener("click", () => {
+  section.classList.toggle("hidden");
+});
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 0) {
+    section.classList.add("hidden"); // or any bg color you prefer
+  } else {
+    section.classList.remove("");
+  }
+});
+
 
 menuToggle.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
@@ -38,4 +53,4 @@ menuToggle.addEventListener("click", () => {
     menuMobile.classList.toggle("hidden");
   });
 
-   
+    
