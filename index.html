@@ -34,7 +34,7 @@
             <ul id="navLinks" class="hidden lg:flex gap-6 uppercase">
               <li><a href="#" class="hover:text-[#e3a507]">Admission</a></li>
               <li><a href="#" class="hover:text-[#e3a507]">Branches</a></li>
-              <li><a href="#" id="academicBtn" class="hover:text-[#e3a507]">Academic</a></li>
+              <li><a href="#" id="academicBtn" onclick="sectionToggle('academicBtn')" class="hover:text-[#e3a507]">Academic</a></li>
               <li><a href="#" class="hover:text-[#e3a507]">Facilities</a></li>
               <li><a href="#" class="hover:text-[#e3a507]">About US</a></li>
               <li>
@@ -55,7 +55,7 @@
             <!-- Toggle Section -->
             <div
               id="academicSection"
-              class="hidden absolute w-full py-12 top-16 left-0 mt-4 bg-white p-4 rounded shadow text-gray-800 flex justify-between gap-8"
+              class="hidden absolute w-full py-12 top-16 left-0 mt-4 bg-white p-4 rounded shadow text-gray-800 flex flex-col md:flex-row justify-between gap-8"
             >
               
               <div class="w-1/2">
@@ -116,7 +116,7 @@
         >
           <li><a href="#" class="hover:text-[#e3a507]">Admission</a></li>
           <li><a href="#" class="hover:text-[#e3a507]">Branches</a></li>
-          <li><a href="#" class="hover:text-[#e3a507]">Academic</a></li>
+          <li><a href="#" id="academicBtnMobile" onclick="sectionToggle('academicBtnMobile')" class="hover:text-[#e3a507]">Academic</a></li>
           <li><a href="#" class="hover:text-[#e3a507]">Facilities</a></li>
           <li><a href="#" class="hover:text-[#e3a507]">About US</a></li>
           <li>

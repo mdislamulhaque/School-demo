@@ -19,9 +19,12 @@ window.addEventListener("scroll", () => {
 const btn = document.getElementById("academicBtn");
 const section = document.getElementById("academicSection");
 
-btn.addEventListener("click", () => {
-  section.classList.toggle("hidden");
-});
+function sectionToggle(id) {
+  const academicId = document.getElementById(id);
+ academicId.addEventListener("click", () => {
+   section.classList.toggle("hidden");
+ });
+}
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
@@ -40,21 +43,21 @@ menuToggle.addEventListener("click", () => {
 });
 
 
- const dropdown = document.getElementById("dropdown");
- const menu = document.getElementById("dropdownMenu");
+//  const dropdown = document.getElementById("dropdown");
+//  const menu = document.getElementById("dropdownMenu");
 
- dropdown.addEventListener("click", function (e) {
-   e.preventDefault();
-   menu.classList.toggle("hidden");
- });
+//  dropdown.addEventListener("click", function (e) {
+//    e.preventDefault();
+//    menu.classList.toggle("hidden");
+//  });
 
 // for mobile menu 
-  const dropdownMobile = document.getElementById("dropdownMobile");
-  const menuMobile = document.getElementById("dropdownMenuMobile");
+  // const dropdownMobile = document.getElementById("dropdownMobile");
+  // const menuMobile = document.getElementById("dropdownMenuMobile");
 
-  dropdownMobile.addEventListener("click", function (e) {
-    e.preventDefault();
-    menuMobile.classList.toggle("hidden");
-  });
+  // dropdownMobile.addEventListener("click", function (e) {
+  //   e.preventDefault();
+  //   menuMobile.classList.toggle("hidden");
+  // });
 
     
