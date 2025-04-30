@@ -6,7 +6,11 @@ const navbar = document.getElementById("navbar");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
-    navbar.classList.add("bg-white", "shadow-md"); // or any bg color you prefer
+    navbar.classList.add("bg-white", "shadow-md");
+    mobileMenu.classList.add('hidden')
+    closeIcon.classList.add('hidden')
+    hamburgerIcon.classList.remove('hidden')
+    menuToggle.classList.remove('hidden')
   } else {
     navbar.classList.remove("bg-white", "shadow-md");
   }
@@ -32,7 +36,7 @@ menuToggle.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
   hamburgerIcon.classList.toggle("hidden");
   closeIcon.classList.toggle("hidden");
-  navbar.classList.toggle("bg-white")
+  navbar.classList.add("bg-white")
 });
 
 

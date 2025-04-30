@@ -21,8 +21,8 @@
         id="navbar"
         class="text-primary text-xl px-8 md:px-16 lg:px-22 py-4 fixed top-0 left-0 z-50 w-full"
       >
-        <div class="flex justify-between items-center">
-          <div class="flex items-center gap-12">
+        <div class="flex justify-between items-center w-full">
+          <div class="flex items-center justify-between gap-12 w-full">
             <a href="/index.html">
               <img
                 class="w-32"
@@ -32,7 +32,7 @@
             </a>
 
             <!-- Desktop Menu -->
-            <ul id="navLinks" class="hidden md:flex gap-6 uppercase">
+            <ul id="navLinks" class="hidden lg:flex gap-6 uppercase">
               <li><a href="#" class="hover:text-[#e3a507]">Admission</a></li>
               <li><a href="#" class="hover:text-[#e3a507]">Branches</a></li>
               <li>
@@ -50,6 +50,13 @@
                 >
               </li>
             </ul>
+            <div>
+              <a
+                href="/src/pages/login/login.html"
+                class="px-6 py-2 text-white bg-primary hover:text-yellow-500 duration-300 rounded-full"
+                >Login</a
+              >
+            </div>
             <!-- Toggle Section -->
             <div
               id="academicSection"
@@ -80,7 +87,7 @@
           </div>
 
           <!-- Hamburger & Cross -->
-          <div id="menuToggle" class="md:hidden cursor-pointer">
+          <div id="menuToggle" class="lg:hidden cursor-pointer ms-6">
             <!-- Hamburger Icon -->
             <svg
               id="hamburgerIcon"
@@ -137,7 +144,7 @@
       </nav>
     </header>
     <!-- main container  -->
-    <main class="py-16 px-8 lg:px-22">
+    <main class="py-16 md:px-8 lg:px-22">
       <!-- address  -->
       <div>
         <div
@@ -269,23 +276,23 @@
       </div>
 
       <!-- map  -->
-      <div class="py-12 flex flex-wrap justify-between items-center">
-        <div>
+      <div
+        class="py-12 flex flex-col md:flex-row gap-8 justify-between items-center w-full"
+      >
+        <div class="w-full md:w-1/2 p-6">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6942.383999319773!2d90.37148734176745!3d23.751509014678057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf4c1c2e3025%3A0x497bb292796b709b!2sDaffodil%20International%20School!5e1!3m2!1sen!2sbd!4v1745828540270!5m2!1sen!2sbd"
-            width="600"
-            height="450"
+            class="w-full h-96 rounded-lg shadow-lg"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div>
+        <div class="w-full md:w-1/2 p-6">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.8665369120117!2d90.37697177511924!3d23.875940978585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c40bcf246a25%3A0xb68765768cffd1d4!2sRupayan%20City%20Uttara!5e1!3m2!1sen!2sbd!4v1745828701070!5m2!1sen!2sbd"
-            width="600"
-            height="450"
+            class="w-full h-96 rounded-lg shadow-lg"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
@@ -299,7 +306,7 @@
         <div
           class="flex justify-between flex-col md:flex-row md:items-center py-6 gap-3"
         >
-          <div class="space-y-4">
+          <div class="space-y-4 px-4 md:px-0">
             <h1 class="text-primary text-4xl font-bold">Our Branches</h1>
             <p>
               Explore Our Comprehensive Academic Program, Catering to the

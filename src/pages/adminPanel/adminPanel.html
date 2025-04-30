@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <!-- tailwindcss  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/src/css/main.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="m-0 bg-[#edf6fa] overflow-hidden">
+    <!-- Parent container -->
+    <div class="flex h-screen">
+      <!-- Sidebar -->
+       <aside
+        id="aside"
+        class="bg-slate-800 text-white  space-y-4 hidden md:block flex-6 md:flex-3 lg:flex-1"
+      >
+        <div class="border-b border-gray-400 py-2">
+          <img src="https://www.dis.edu.bd/uploads/shortcodes/dis-new-1676290938.webp" class="text-xl font-bold text-yellow-600 mx-auto  w-40 h-16 "></img>
+        </div>
+       <nav class="space-y-2 text-md p-4 overflow-auto h-screen no-scrollbar">
+          <ul class="space-y-2">
+
+             <!-- home  -->
+             <li>
+                <a href="#" class=" px-2 py-2 rounded bg-slate-700 flex items-center justify-between">🏠 Home  
+                  <span>></span> 
+                </a>
+              </li>
+
+             <!-- hr  -->
+             <li class="relative">
+             <a
+               id="hrBtn"
+               onclick="toggleSubMenu('hrMenu','hrArrow')"
+               class="flex justify-between items-center w-full text-left rounded px-2 py-2 hover:bg-slate-700 mr-4"
+             >
+               👨‍🦳 HR  <span id="hrArrow" class="transition-transform duration-300">></span> 
+             </a>
+                    <!-- HR sub Menu -->
+              <ul id="hrMenu" class="hidden mt-1 text-white bg-slate-600 rounded shadow  w-full z-10">
+                 <li>
+                    <a id="people-btn" onclick="toggleSubMenu('people-menu','people-arrow')" class="flex justify-between items-center px-4 py-2 hover:bg-slate-700">👪 People <span id="people-arrow" class="transition-transform duration-300">></span> 
+                    </a>
+                  <!-- people sub menu  -->
+                    <ul id="people-menu" class="hidden mt-1 text-white bg-slate-700 rounded  w-full text-left  shadow z-10">
+                      <li><a class="block ps-10 py-2 hover:bg-slate-800">Student </a></li>
+                      <li><a class="block ps-10 py-2 hover:bg-slate-800">Teachers</a></li>
+                      <li><a class="block ps-10 py-2 hover:bg-slate-800">Administratives</a></li>
+                      <li><a class="block ps-10 py-2 hover:bg-slate-800">Admins</a></li>
+                    </ul>
+                  </li>
+
+                 <li><a href="#" class="block px-4 py-2 hover:bg-slate-700">Leave Requests</a></li>
+                 <li><a href="#" class="block px-4 py-2 hover:bg-slate-700">Payroll</a></li>
+                 <li><a href="#" class="block px-4 py-2 hover:bg-slate-700">Recruitment</a></li>
+                 <li><a href="#" class="block px-4 py-2 hover:bg-slate-700">Policies</a></li>
+              </ul>
+             </li>
+
+             <li><a href="#" class="flex justify-between items-center rounded px-2 py-2 hover:bg-slate-700">🏫 Academics <span id="academic-arrow" class="transition-transform duration-300">></span></a></li>
+
+             <li><a href="#" class="flex justify-between items-center rounded px-2 py-2 hover:bg-slate-700">🧾 Accounts <span id="account-arrow" class="transition-transform duration-300">></span></a></li>
+
+             <li><a href="#" class="flex justify-between items-center rounded px-2 py-2 hover:bg-slate-700">🏬 Inventory <span id="inventory-arrow" class="transition-transform duration-300">></span></a></li>
+
+             <li><a href="#" class="flex justify-between items-center rounded px-2 py-2 hover:bg-slate-700">🗃️ SMS <span id="sms-arrow" class="transition-transform duration-300">></span></a></li>
+
+             <li><a href="#" class="flex justify-between items-center rounded px-2 py-2 hover:bg-slate-700">🛠️ System Setup <span id="system-arrow" class="transition-transform duration-300">></span></a></li>
+
+             <li><a href="#" class="flex justify-between items-center rounded px-2 py-2 hover:bg-slate-700">🎧 Support Tickets</a></li>
+             <li><a href="#" class="flex justify-between items-center rounded px-2 py-2 hover:bg-slate-700">📝 Bills</a></li>
+             <li><a href="#" class="flex justify-between items-center rounded px-2 py-2 hover:bg-slate-700">❓ Help /Tutorials</a></li>
+          </ul>
+        </nav>
+       </aside>
+      <!-- Right Content -->
+      <div class="flex-5 flex-col">
+        <!-- Top Navbar -->
+        <header
+          class="bg-white shadow px-4 py-4 flex items-center justify-between"
+        >
+          <button class="text-2xl" id="toggleBtn">⩸</button>
+         
+          <div class="flex items-center space-x-4 text-sm">
+            <span>🇺🇸</span>
+            <span class="relative">
+              🔔
+              <span
+                class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center"
+                >7</span
+              >
+            </span>
+            <div class="flex items-center space-x-2">
+              <img
+                src="https://i.pravatar.cc/30"
+                class="rounded-full w-8 h-8"
+              />
+              <div>
+                <p class="font-semibold">User Name</p>
+                <p class="text-xs text-gray-500">ID: 91149</p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- Main Content -->
+        <main class="p-4 space-y-4 overflow-auto h-screen flex-1">
+          <h1 class="text-2xl font-bold mb-1">Home</h1>
+          <p class="text-sm text-gray-500 mb-6">Last Updated: 32 minutes ago</p>
+
+          <h2 class="text-xl font-semibold mb-4">Income-Expense</h2>
+
+          <!-- Grid Cards -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+          >
+            <div class="bg-green-50 p-4 rounded shadow">
+              <h3 class="text-green-700 font-semibold">Total Income</h3>
+              <p class="text-2xl text-green-800 font-bold">৳ 1,03,02,960.3</p>
+              <p class="text-xs text-gray-500">2025</p>
+            </div>
+            <div class="bg-red-50 p-4 rounded shadow">
+              <h3 class="text-red-700 font-semibold">Total Expense</h3>
+              <p class="text-2xl text-red-800 font-bold">৳ 24,79,407</p>
+              <p class="text-xs text-gray-500">2025</p>
+            </div>
+            <div class="bg-blue-50 p-4 rounded shadow">
+              <h3 class="text-blue-700 font-semibold">Total Balance</h3>
+              <p class="text-2xl text-blue-800 font-bold">৳ 78,23,553.3</p>
+              <p class="text-xs text-gray-500">2025</p>
+            </div>
+            <div class="bg-green-50 p-4 rounded shadow">
+              <h3 class="text-green-700 font-semibold">Monthly Income</h3>
+              <p class="text-2xl text-green-800 font-bold">৳ 19,50,390</p>
+              <p class="text-xs text-gray-500">Apr 2025</p>
+            </div>
+            <!-- Add more cards similarly -->
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- script  -->
+    <script src="/src/js/adminPanel.js"></script>
+  </body>
+</html>
