@@ -27,3 +27,19 @@ function toggleSubMenu(menuId, arrowId = null) {
 }
 
 
+
+const home =document.getElementById("home");
+const form =document.getElementById("form");
+const formBtn = document.getElementById("form-btn");
+const homeBtn = document.getElementById("home-btn");
+
+
+formBtn.addEventListener("click", () => {
+  form.classList.remove("hidden");
+  home.classList.add("hidden");
+});
+
+homeBtn.addEventListener("click", () => {   
+  form.classList.add("hidden");
+  home.classList.remove("hidden");
+});
