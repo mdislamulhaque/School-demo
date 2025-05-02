@@ -1,63 +1,55 @@
+// Cache DOM elements
 const menuToggle = document.getElementById("menuToggle");
 const hamburgerIcon = document.getElementById("hamburgerIcon");
 const closeIcon = document.getElementById("closeIcon");
 const mobileMenu = document.getElementById("mobileMenu");
 const navbar = document.getElementById("navbar");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 0) {
-    navbar.classList.add("bg-white", "shadow-md");
-    mobileMenu.classList.add('hidden')
-    closeIcon.classList.add('hidden')
-    hamburgerIcon.classList.remove('hidden')
-    menuToggle.classList.remove('hidden')
-  } else {
-    navbar.classList.remove("bg-white", "shadow-md");
+// ✅ Reusable function
+function setupToggleButton(buttonId, sectionId) {
+  const button = document.getElementById(buttonId);
+  const section = document.getElementById(sectionId);
+
+  if (button && section) {
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
+      section.classList.toggle("hidden");
+    });
   }
-});
-
-const btn = document.getElementById("academicBtn");
-const section = document.getElementById("academicSection");
-
-function sectionToggle(id) {
-  const academicId = document.getElementById(id);
- academicId.addEventListener("click", () => {
-   section.classList.toggle("hidden");
- });
 }
 
+// ✅ Reuse for both Desktop and Mobile
+setupToggleButton("academicBtn", "academicSection");
+setupToggleButton("academicBtnMobile", "academicSection");
+
+// ✅ Scroll handler
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 0) {
-    section.classList.add("hidden"); // or any bg color you prefer
-  } else {
-    section.classList.remove("");
+  const scrolled = window.scrollY > 0;
+
+  navbar.classList.toggle("bg-white", scrolled);
+  navbar.classList.toggle("shadow-md", scrolled);
+
+  if (scrolled) {
+    mobileMenu.classList.add("hidden");
+    closeIcon.classList.add("hidden");
+    hamburgerIcon.classList.remove("hidden");
+    menuToggle.classList.remove("hidden");
+
+    // Hide academic section on scroll
+    const section = document.getElementById("academicSection");
+    if (section) section.classList.add("hidden");
   }
 });
 
-
+// ✅ Mobile menu toggle
 menuToggle.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
+  const isHidden = mobileMenu.classList.toggle("hidden");
   hamburgerIcon.classList.toggle("hidden");
   closeIcon.classList.toggle("hidden");
-  navbar.classList.add("bg-white")
+  navbar.classList.add("bg-white");
+
+  if (isHidden) {
+    const section = document.getElementById("academicSection");
+    if (section) section.classList.add("hidden");
+  }
 });
-
-
-//  const dropdown = document.getElementById("dropdown");
-//  const menu = document.getElementById("dropdownMenu");
-
-//  dropdown.addEventListener("click", function (e) {
-//    e.preventDefault();
-//    menu.classList.toggle("hidden");
-//  });
-
-// for mobile menu 
-  // const dropdownMobile = document.getElementById("dropdownMobile");
-  // const menuMobile = document.getElementById("dropdownMenuMobile");
-
-  // dropdownMobile.addEventListener("click", function (e) {
-  //   e.preventDefault();
-  //   menuMobile.classList.toggle("hidden");
-  // });
-
-    
